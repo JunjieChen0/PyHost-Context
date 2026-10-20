@@ -71,9 +71,9 @@ placeholders; **OPEN** = not started; **BLOCKED** = needs an author decision.
 |---|---|---|
 | Funding | DONE | No specific funding; statement written |
 | Competing interests | DONE | Confirmed: the author declares no competing interests |
-| Data availability | DONE | Zenodo + GitHub; DOI and repository URL pending |
-| Code availability | DONE | GitHub + Zenodo; URL and DOI pending |
-| Repository identifiers | OPEN | Insert Zenodo DOI and GitHub URL before submission |
+| Data availability | DONE | Zenodo + GitHub; Zenodo DOI pending |
+| Code availability | DONE | GitHub live; Zenodo DOI pending |
+| Repository identifiers | OPEN | GitHub URL inserted; Zenodo DOI pending |
 | Author contributions | DRAFT | CRediT draft for sole author |
 | Ethics / consent | DRAFT | Not applicable; confirm |
 | Acknowledgments | OPEN | Add or remove |

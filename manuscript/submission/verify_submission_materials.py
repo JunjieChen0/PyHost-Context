@@ -69,8 +69,9 @@ def main() -> int:
     check("data_route_confirmed", metadata["confirmed_by_author"]["data_availability_route"] is True
           and metadata["data_and_code"]["route"] == "zenodo_and_github"
           and metadata["data_and_code"]["confirmed"] is True)
-    check("data_identifiers_pending", metadata["data_and_code"]["zenodo_doi"] is None
-          and metadata["data_and_code"]["github_url"] is None)
+    check("github_url_live", metadata["data_and_code"]["github_url"] ==
+          "https://github.com/JunjieChen0/PyHost-Context")
+    check("zenodo_doi_pending", metadata["data_and_code"]["zenodo_doi"] is None)
     check("ai_author_provided", metadata["ai_use_disclosure"]["status"] == "author_provided"
           and metadata["ai_use_disclosure"]["package_drafts_wording"] is False)
     check("ai_text_zh", "本研究使用 OpenAI ChatGPT" in metadata["ai_use_disclosure"]["source_text"])
@@ -98,7 +99,8 @@ def main() -> int:
                    "No preprint has been posted",
                    "has not been submitted to, and is not",
                    "no specific grant", "The author declares no competing interests",
-                   "Zenodo and GitHub", "insert the Zenodo DOI",
+                   "The frozen evidence bundle and recomputation scripts will be deposited in", "insert the Zenodo DOI",
+                   "https://github.com/JunjieChen0/PyHost-Context",
                    "This study used OpenAI ChatGPT", "I take responsibility",
                    "Author-provided statement"):
         check("declarations:" + marker, marker in declarations)
@@ -111,10 +113,10 @@ def main() -> int:
                    "No new experiments are required or authorized",
                    "Confirmed: sole author and corresponding author",
                    "No specific funding; statement written",
-                   "Zenodo + GitHub; DOI and repository URL pending",
+                   "Zenodo + GitHub; Zenodo DOI pending",
                    "Author-provided statement; English text in the declarations",
                    "No preprint; not under consideration elsewhere",
-                   "Insert Zenodo DOI and GitHub URL before submission"):
+                   "GitHub URL inserted; Zenodo DOI pending"):
         check("checklist:" + marker, marker in checklist)
 
     forbidden = ("novel contribution", "first study", "first to", "we prove", "proves that",

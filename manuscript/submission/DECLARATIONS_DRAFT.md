@@ -17,16 +17,18 @@ The author declares no competing interests.
 The study is based on public open-source projects and frozen local artifacts. The
 manuscript reports commitment hashes, ledgers, raw-artifact counts and recomputation
 scripts. The frozen evidence bundle and recomputation scripts will be deposited in
-Zenodo and GitHub.
+Zenodo. The code and documentation snapshot is available at
+https://github.com/JunjieChen0/PyHost-Context.
 
-[[TODO: insert the Zenodo DOI and GitHub repository URL before submission.]]
+[[TODO: insert the Zenodo DOI before submission.]]
 
 ## Code availability
 
-The recomputation and audit scripts will be available in the GitHub repository and in
-the Zenodo deposit.
+The recomputation and audit scripts are available at
+https://github.com/JunjieChen0/PyHost-Context and will also be included in the Zenodo
+deposit.
 
-[[TODO: insert the GitHub URL and Zenodo DOI before submission.]]
+[[TODO: insert the Zenodo DOI before submission.]]
 
 ## Author contributions
 

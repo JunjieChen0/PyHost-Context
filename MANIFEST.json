@@ -122,28 +122,28 @@
     },
     {
       "path": "manuscript/submission/AUTHOR_METADATA.json",
-      "bytes": 4297,
-      "sha256": "e5019788b33f5a7a2a20afe06be202df276fbd1e3a8948ab1f02530f8a939818"
+      "bytes": 4378,
+      "sha256": "ad9fbc4c7f5dcf64fefc134377496e73842d86189b123af67ad96ac1727750bb"
     },
     {
       "path": "manuscript/submission/COVER_LETTER_DRAFT.md",
-      "bytes": 2923,
-      "sha256": "4ac41dcc92f0efcb995c51231f6b3da8bb853860bbba2f9934073848c2dd9115"
+      "bytes": 2989,
+      "sha256": "c8366acffc7cf586fced559f7dbd9c9bfc0e7dd1320989ecaaf6c82434b940c6"
     },
     {
       "path": "manuscript/submission/DECLARATIONS_DRAFT.md",
-      "bytes": 2877,
-      "sha256": "47a0e9a9a36b7d90377fdb07bcd3bd17df72e842f0276cd34f7d523bd37a0706"
+      "bytes": 2966,
+      "sha256": "3e40afef1961e266db2572d3d0a894ffab868fd4b39e2887b3291f1cb0087ff4"
     },
     {
       "path": "manuscript/submission/README.md",
-      "bytes": 2317,
-      "sha256": "170daf488e016343a27af4a9934cc4509fc3920914a0d2477e9e7e101286e31b"
+      "bytes": 2355,
+      "sha256": "d2afa2b0b663bf06678854a478af4f254ab18198e535af5f24dbadea531a6208"
     },
     {
       "path": "manuscript/submission/SQJ_SUBMISSION_CHECKLIST.md",
-      "bytes": 5170,
-      "sha256": "19fd0a7b93b3ca921de41b0749bb67ec8005e58021d65756790470e320ee933e"
+      "bytes": 5142,
+      "sha256": "6107e7dbdc51dda57f2e55038b982dd9c1e21af4f32e19c6f64242b78f78d465"
     },
     {
       "path": "manuscript/submission/TITLE_PAGE_DRAFT.md",
@@ -153,7 +153,7 @@
     {
       "path": "manuscript/submission/VERIFICATION_RESULT.json",
       "bytes": 265,
-      "sha256": "4b6e026180ebdef2d9cf235045886a5102f1df33fc43fd197606e46493ef89ae"
+      "sha256": "26ed2696ed0755febbe7210a69c8648ab7530c40f8551cf5a566f289f5c221f5"
     },
     {
       "path": "manuscript/submission/build_package.py",
@@ -162,8 +162,8 @@
     },
     {
       "path": "manuscript/submission/verify_submission_materials.py",
-      "bytes": 8096,
-      "sha256": "0a6b59af205720d3f0a0720351760c286340829127dc3ff1199473a1783615ba"
+      "bytes": 8260,
+      "sha256": "742ea0a795779b8a2bdc57a6af2233dff811b41f2ede18c0d43ba5429e1f7f18"
     },
     {
       "path": "metadata/README.md",

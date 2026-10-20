@@ -13,14 +13,14 @@
 - ORCID：**0009-0002-3499-3621**
 - 基金：**无特定资助**
 - 利益冲突：**无**
-- 数据与代码：**Zenodo + GitHub**（DOI 与仓库 URL 待补）
+- 数据与代码：**Zenodo + GitHub**（GitHub 已上线：https://github.com/JunjieChen0/PyHost-Context；Zenodo DOI 待补）
 - 预印本/他刊：**无预印本，未投他刊**
 - 目标期刊：**Software Quality Journal**（Springer，hybrid），稿件类型 **Original Paper**
 - 摘要 **150–250 词**、关键词 **4–6**、LaTeX 模板 **sn-jnl**
 
 ## 仍需确认
 
-1. **Zenodo DOI 与 GitHub 仓库 URL**：投稿前必须填入。
+1. **Zenodo DOI**：投稿前必须填入。
 2. 可选：电话、推荐审稿人。
 3. **作者贡献（CRediT）**：草稿列出单作者角色，需你确认。
 
@@ -41,7 +41,7 @@
 python3 -B verify_submission_materials.py
 ```
 
-当前 **106 项检查通过**：作者字段、标题页要素、cover letter 的关键数字与限定语、
+当前 **108 项检查通过**：作者字段、标题页要素、cover letter 的关键数字与限定语、
 声明占位、清单完整性、以及“无首创/无保证录用”等禁止措辞。
 
 它只检查结构与措辞；不判断稿件质量、期刊适配或录用概率。

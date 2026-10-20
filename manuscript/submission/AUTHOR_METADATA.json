@@ -44,9 +44,9 @@
     "route": "zenodo_and_github",
     "confirmed": true,
     "zenodo_doi": null,
-    "github_url": null,
+    "github_url": "https://github.com/JunjieChen0/PyHost-Context",
     "statement": "The frozen evidence bundle, commitment hashes, ledgers, raw-artifact counts and recomputation scripts will be deposited in Zenodo and GitHub.",
-    "pending": "Zenodo DOI and GitHub repository URL must be inserted before submission."
+    "pending": "Zenodo DOI must be inserted before submission."
   },
   "ai_use_disclosure": {
     "status": "author_provided",
@@ -68,7 +68,7 @@
     "Sole-author and corresponding-author status confirmed.",
     "ORCID confirmed: 0009-0002-3499-3621.",
     "No funding, no competing interests, and no preprint or prior submission confirmed.",
-    "Data and code route confirmed as Zenodo + GitHub; DOI and repository URL pending.",
+    "Data and code route confirmed as Zenodo + GitHub; GitHub repository is live at https://github.com/JunjieChen0/PyHost-Context; Zenodo DOI pending.",
     "AI-use statement provided by the author; suggested reviewers remain open."
   ],
   "competing_interests": {
