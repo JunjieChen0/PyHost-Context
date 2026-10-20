@@ -71,7 +71,7 @@ def main() -> int:
           and metadata["data_and_code"]["confirmed"] is True)
     check("github_url_live", metadata["data_and_code"]["github_url"] ==
           "https://github.com/JunjieChen0/PyHost-Context")
-    check("zenodo_doi_pending", metadata["data_and_code"]["zenodo_doi"] is None)
+    check("zenodo_doi", metadata["data_and_code"]["zenodo_doi"] == "10.5281/zenodo.23491391")
     check("ai_author_provided", metadata["ai_use_disclosure"]["status"] == "author_provided"
           and metadata["ai_use_disclosure"]["package_drafts_wording"] is False)
     check("ai_text_zh", "本研究使用 OpenAI ChatGPT" in metadata["ai_use_disclosure"]["source_text"])
@@ -99,7 +99,7 @@ def main() -> int:
                    "No preprint has been posted",
                    "has not been submitted to, and is not",
                    "no specific grant", "The author declares no competing interests",
-                   "The frozen evidence bundle and recomputation scripts will be deposited in", "insert the Zenodo DOI",
+                   "The frozen evidence bundle and recomputation scripts are archived in Zenodo", "10.5281/zenodo.23491391",
                    "https://github.com/JunjieChen0/PyHost-Context",
                    "This study used OpenAI ChatGPT", "I take responsibility",
                    "Author-provided statement"):
@@ -113,10 +113,10 @@ def main() -> int:
                    "No new experiments are required or authorized",
                    "Confirmed: sole author and corresponding author",
                    "No specific funding; statement written",
-                   "Zenodo + GitHub; Zenodo DOI pending",
+                   "Zenodo DOI 10.5281/zenodo.23491391; GitHub live",
                    "Author-provided statement; English text in the declarations",
                    "No preprint; not under consideration elsewhere",
-                   "GitHub URL inserted; Zenodo DOI pending"):
+                   "GitHub URL and Zenodo DOI inserted"):
         check("checklist:" + marker, marker in checklist)
 
     forbidden = ("novel contribution", "first study", "first to", "we prove", "proves that",

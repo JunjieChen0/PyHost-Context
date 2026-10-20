@@ -13,16 +13,15 @@
 - ORCID：**0009-0002-3499-3621**
 - 基金：**无特定资助**
 - 利益冲突：**无**
-- 数据与代码：**Zenodo + GitHub**（GitHub 已上线：https://github.com/JunjieChen0/PyHost-Context；Zenodo DOI 待补）
+- 数据与代码：**Zenodo DOI 10.5281/zenodo.23491391**；GitHub：https://github.com/JunjieChen0/PyHost-Context
 - 预印本/他刊：**无预印本，未投他刊**
 - 目标期刊：**Software Quality Journal**（Springer，hybrid），稿件类型 **Original Paper**
 - 摘要 **150–250 词**、关键词 **4–6**、LaTeX 模板 **sn-jnl**
 
 ## 仍需确认
 
-1. **Zenodo DOI**：投稿前必须填入。
-2. 可选：电话、推荐审稿人。
-3. **作者贡献（CRediT）**：草稿列出单作者角色，需你确认。
+1. 可选：电话、推荐审稿人。
+2. **作者贡献（CRediT）**：草稿列出单作者角色，需你确认。
 
 ## 文件
 

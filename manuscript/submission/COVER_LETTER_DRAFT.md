@@ -38,9 +38,8 @@ The submission is not under consideration elsewhere and has not been posted as a
 preprint. The author declares no competing interests. The research received no
 specific grant from any funding agency in the public, commercial, or not-for-profit
 sectors. The frozen evidence bundle, commitment hashes, ledgers and recomputation
-scripts will be deposited in Zenodo, and the code and documentation snapshot is
-available at https://github.com/JunjieChen0/PyHost-Context. [[TODO: insert the Zenodo
-DOI before submission.]]
+scripts are archived at DOI 10.5281/zenodo.23491391. The code and documentation
+snapshot is available at https://github.com/JunjieChen0/PyHost-Context.
 
 Thank you for considering the manuscript.
 
