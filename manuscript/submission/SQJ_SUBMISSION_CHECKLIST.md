@@ -55,6 +55,7 @@ placeholders; **OPEN** = not started; **BLOCKED** = needs an author decision.
 | S2 two-block status table | OPEN | Four E4, one E3, three E2 |
 | S3 decision-distribution table | OPEN | 108 original cells and 12 corrective cells, reported separately |
 | Figure permissions | N/A | All figures generated from own data |
+| Code license | DONE | MIT |
 
 ## E. References
 
@@ -74,7 +75,7 @@ placeholders; **OPEN** = not started; **BLOCKED** = needs an author decision.
 | Data availability | DONE | Zenodo DOI 10.5281/zenodo.23491391; GitHub live |
 | Code availability | DONE | GitHub live; Zenodo DOI 10.5281/zenodo.23491391 |
 | Repository identifiers | DONE | GitHub URL and Zenodo DOI inserted |
-| Author contributions | DRAFT | CRediT draft for sole author |
+| Author contributions | DONE | Single-author CRediT roles confirmed |
 | Ethics / consent | DRAFT | Not applicable; confirm |
 | Acknowledgments | OPEN | Add or remove |
 | AI use disclosure | DONE | Author-provided statement; English text in the declarations |

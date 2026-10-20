@@ -10,6 +10,7 @@ authors:
 repository-code: "https://github.com/JunjieChen0/PyHost-Context"
 url: "https://github.com/JunjieChen0/PyHost-Context"
 doi: "10.5281/zenodo.23491391"
+license: MIT
 date-released: "2026-10-20"
 version: "0.1.0"
 keywords:

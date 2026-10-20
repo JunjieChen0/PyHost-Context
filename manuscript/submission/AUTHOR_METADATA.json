@@ -34,7 +34,8 @@
     "data_availability_route": true,
     "ai_use_disclosure_scope": true,
     "suggested_reviewers": false,
-    "preprint_or_prior_submission": true
+    "preprint_or_prior_submission": true,
+    "author_contributions": true
   },
   "funding": {
     "has_funding": false,
@@ -69,10 +70,15 @@
     "ORCID confirmed: 0009-0002-3499-3621.",
     "No funding, no competing interests, and no preprint or prior submission confirmed.",
     "Data and code route confirmed as Zenodo + GitHub; GitHub repository is live at https://github.com/JunjieChen0/PyHost-Context; Zenodo DOI: 10.5281/zenodo.23491391.",
-    "AI-use statement provided by the author; suggested reviewers remain open."
+    "AI-use statement provided by the author; suggested reviewers remain open.",
+    "CRediT single-author roles confirmed; GitHub code license set to MIT."
   ],
   "competing_interests": {
     "has_competing_interests": false,
     "statement": "The author declares no competing interests."
+  },
+  "author_contributions": {
+    "confirmed": true,
+    "credit": "Junjie Chen: conceptualization, methodology, software, validation, formal analysis, investigation, data curation, writing—original draft, writing—review and editing, visualization, supervision, project administration."
   }
 }

@@ -54,8 +54,9 @@ Quality Journal*; it has not been submitted yet.
 
 ## License
 
-A license has not been selected yet. Until one is added, the default is all rights
-reserved. See `LICENSE_STATUS.md`.
+- **Code**: MIT License, see `LICENSE`.
+- **Evidence archive**: CC BY 4.0, via the Zenodo record
+  [10.5281/zenodo.23491391](https://doi.org/10.5281/zenodo.23491391).
 
 ## Contact
 

@@ -32,10 +32,9 @@ Zenodo DOI: [10.5281/zenodo.23491391](https://doi.org/10.5281/zenodo.23491391).
 
 ## Author contributions
 
-[[TODO: confirm CRediT roles. Draft for a sole author:
-"Junjie Chen: conceptualization, methodology, software, validation, formal analysis,
+Junjie Chen: conceptualization, methodology, software, validation, formal analysis,
 investigation, data curation, writing—original draft, writing—review and editing,
-visualization, supervision, project administration."]]
+visualization, supervision, project administration.
 
 ## Ethics approval
 

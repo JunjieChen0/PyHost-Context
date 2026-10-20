@@ -102,8 +102,14 @@ def main() -> int:
                    "The frozen evidence bundle and recomputation scripts are archived in Zenodo", "10.5281/zenodo.23491391",
                    "https://github.com/JunjieChen0/PyHost-Context",
                    "This study used OpenAI ChatGPT", "I take responsibility",
-                   "Author-provided statement"):
+                   "Author-provided statement",
+                   "Junjie Chen: conceptualization, methodology, software",
+                   "visualization, supervision, project administration."):
         check("declarations:" + marker, marker in declarations)
+    check("credit_no_placeholder", "confirm CRediT roles" not in declarations
+          and "Junjie Chen: conceptualization" in declarations)
+    check("credit_metadata", metadata["author_contributions"]["confirmed"] is True
+          and "project administration" in metadata["author_contributions"]["credit"])
 
     checklist = text("SQJ_SUBMISSION_CHECKLIST.md")
     for marker in ("## A. Venue", "## B. Author and title page", "## C. Manuscript",
@@ -116,7 +122,8 @@ def main() -> int:
                    "Zenodo DOI 10.5281/zenodo.23491391; GitHub live",
                    "Author-provided statement; English text in the declarations",
                    "No preprint; not under consideration elsewhere",
-                   "GitHub URL and Zenodo DOI inserted"):
+                   "GitHub URL and Zenodo DOI inserted",
+                   "Single-author CRediT roles confirmed", "| Code license | DONE | MIT |"):
         check("checklist:" + marker, marker in checklist)
 
     forbidden = ("novel contribution", "first study", "first to", "we prove", "proves that",
