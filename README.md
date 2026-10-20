@@ -20,8 +20,12 @@ of Science and Technology. ORCID: [0009-0002-3499-3621](https://orcid.org/0009-0
 ## What is not here
 
 Raw run logs, virtual environments, wheelhouses and restored source trees are **not**
-in Git. The frozen evidence archive will be deposited in Zenodo. The DOI and repository
-link will be added here once assigned.
+in Git. The frozen evidence archive is deposited in Zenodo:
+
+- DOI: [10.5281/zenodo.23491391](https://doi.org/10.5281/zenodo.23491391)
+- Record: https://zenodo.org/records/23491391
+- File: `PyHost-Context_Evidence_20261020.zip`
+- MD5: `fc4d0ad79aff685fdfcfe50b10d5627a`
 
 ## Headline results (bounded)
 
