@@ -1,0 +1,75 @@
+{
+  "ok": true,
+  "scope": "Synthetic probes only. Evidence files are empty placeholders or byte copies; no real evidence, authorization or candidate execution is fabricated.",
+  "cases": [
+    {
+      "id": "A_empty_evidence_rejected",
+      "expected": "rejected",
+      "returncode": 1,
+      "problems": [
+        "evidence_nonempty:pyhost-context/extension/PROTOCOL_v1.1.md",
+        "evidence_nonempty:pyhost-context/extension/amendments/SOURCE_TREE_ARTIFACT_RESOLUTION_DEFECT.md",
+        "evidence_nonempty:pyhost-context/extension/freeze/ADMISSION_STATUS.md",
+        "evidence_nonempty:pyhost-context/extension/next_phase/s1b_20261019/S1B_PRE_RUN_COMMITMENT_20261019.json",
+        "evidence_nonempty:pyhost-context/extension/next_phase/s1b_20261019/S1B_ROSTER_20261019.json",
+        "evidence_nonempty:pyhost-context/extension/next_phase/s2_20261019/S2_PRE_RUN_COMMITMENT_20261019.json",
+        "evidence_nonempty:pyhost-context/extension/next_phase/s2_20261019/S2_READ_CHAINS_20261019.json",
+        "evidence_nonempty:pyhost-context/extension/next_phase/s2_closure_20261020/REVIEWER001_CLOSURE.json",
+        "evidence_nonempty:pyhost-context/extension/next_phase/s2_closure_20261020/S2_REGISTRATION_ADDENDUM_20261020.json",
+        "evidence_nonempty:pyhost-context/extension/next_phase/s2_closure_20261020/defect_disposition.json",
+        "evidence_nonempty:pyhost-context/extension/next_phase/s2_closure_20261020/registered_levels.json",
+        "evidence_nonempty:pyhost-context/extension/next_phase/s2_closure_20261020/verification/recompute_review.json",
+        "evidence_nonempty:pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/EVIDENCE_CONSOLIDATION.md",
+        "evidence_nonempty:pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/results/reviewed_accounting.json",
+        "evidence_nonempty:pyhost-context/extension/next_phase/state/s1b_20261019/S1B_ANALYSIS_20261019.json",
+        "evidence_nonempty:pyhost-context/extension/next_phase/state/s2_20261019/adjudication.json",
+        "evidence_nonempty:pyhost-context/extension/reviews/reviewer001_artifact_identity_20261016/REVIEWER001_RULING.md"
+      ]
+    },
+    {
+      "id": "B_fabricated_count_rejected",
+      "expected": "rejected",
+      "returncode": 1,
+      "problems": [
+        "claim_number:C7:post_research_calls:3086 != 999999",
+        "claim_requires:C7:3,086"
+      ]
+    },
+    {
+      "id": "C_correct_post_s2_counts_accepted",
+      "expected": "accepted",
+      "returncode": 0,
+      "problems": []
+    },
+    {
+      "id": "D_old_14_selection_count_rejected",
+      "expected": "rejected",
+      "returncode": 1,
+      "problems": [
+        "selection_wrong_count",
+        "selection_sets_disjoint",
+        "selection_collision_total",
+        "selection_readmission_total",
+        "claim_number:C6:wrong_source_unselected:14 != 10"
+      ]
+    },
+    {
+      "id": "E_recovery_scope_removed_rejected",
+      "expected": "rejected",
+      "returncode": 1,
+      "problems": [
+        "claim_requires:C1:只对选定合格单位"
+      ]
+    },
+    {
+      "id": "F_author_checks_overclaimed_rejected",
+      "expected": "rejected",
+      "returncode": 1,
+      "problems": [
+        "doc_no_overclaim:296 项检查全部通过:296 项检查全部通过"
+      ]
+    }
+  ],
+  "candidate_or_tool_calls": 0,
+  "new_experiments": 0
+}

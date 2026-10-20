@@ -1,0 +1,120 @@
+{
+  "author_submission_sha256": "66996d639f59ab5b45906ec5c9afc32c24085dd77bb66391acbcd6399a238d3d",
+  "batch_id": "next-S2-20261019",
+  "decision": "S2_RESULTS_CLOSED_WITH_REVIEWER_PARSER_CORRECTION",
+  "duration_seconds_field_sum": 573.6821906720003,
+  "evidence_level_meaning": "E4 supports attribution to the registered environmental intervention in the frozen project/version/scope; not functional defect, full causal mechanism, strategy superiority, ecosystem frequency or safety.",
+  "execution_clearance_package_sha256": "165dd935d033a6a2ecad9df54aa47bde3d479843af05ce5c02a641f138aa3748",
+  "historical_execution_tree_must_remain_unchanged": true,
+  "independent_statistical_sample_size_not_claimed": true,
+  "new_execution_authorized": false,
+  "next_action": "Archive this closure and incorporate the five unit-level registrations once into the existing results ledger. No new experiment, preparation round or receipt-of-receipt is required by this closure.",
+  "not_wall_clock_or_cpu_cost": true,
+  "pre_run_commitment_hash": "5f85571e834db8e62907ab8c28949743eb84e0b496c80c482c4978196c1c9a52",
+  "readonly_review_recomputation_authorized": true,
+  "registered_calls": 30,
+  "registered_levels": [
+    {
+      "E4_gates": {
+        "reading_chain": false,
+        "schedule_gate": true,
+        "scope_identity": true
+      },
+      "block_statuses": {
+        "1": "NOT_EVALUABLE_BASELINE_DRIFT",
+        "2": "NOT_EVALUABLE_BASELINE_DRIFT"
+      },
+      "not_functional_defect_certification": true,
+      "previous_level": "E2",
+      "recovery_evaluable": false,
+      "registered_level": "E2",
+      "unit_id": "typer/K07_COLUMNS",
+      "unit_status": "NOT_EVALUABLE"
+    },
+    {
+      "E4_gates": {
+        "reading_chain": false,
+        "schedule_gate": true,
+        "scope_identity": true
+      },
+      "block_statuses": {
+        "1": "NOT_EVALUABLE_BASELINE_DRIFT",
+        "2": "NOT_EVALUABLE_BASELINE_DRIFT"
+      },
+      "not_functional_defect_certification": true,
+      "previous_level": "E2",
+      "recovery_evaluable": false,
+      "registered_level": "E2",
+      "unit_id": "typer/K05_NO_COLOR",
+      "unit_status": "NOT_EVALUABLE"
+    },
+    {
+      "E4_gates": {
+        "reading_chain": false,
+        "schedule_gate": true,
+        "scope_identity": true
+      },
+      "block_statuses": {
+        "1": "NOT_EVALUABLE_BASELINE_DRIFT",
+        "2": "NOT_EVALUABLE_BASELINE_DRIFT"
+      },
+      "not_functional_defect_certification": true,
+      "previous_level": "E2",
+      "recovery_evaluable": false,
+      "registered_level": "E2",
+      "unit_id": "typer/K06_TERM",
+      "unit_status": "NOT_EVALUABLE"
+    },
+    {
+      "E4_gates": {
+        "reading_chain": true,
+        "schedule_gate": true,
+        "scope_identity": true
+      },
+      "block_statuses": {
+        "1": "BLOCK_CONFIRMED",
+        "2": "BLOCK_CONFIRMED"
+      },
+      "not_functional_defect_certification": true,
+      "previous_level": "E2",
+      "recovery_evaluable": true,
+      "registered_level": "E4",
+      "unit_id": "twine/K06_TERM",
+      "unit_status": "RECOVERED_TWO_BLOCKS"
+    },
+    {
+      "E4_gates": {
+        "reading_chain": true,
+        "schedule_gate": true,
+        "scope_identity": true
+      },
+      "block_statuses": {
+        "1": "BLOCK_CONFIRMED",
+        "2": "BLOCK_CONFIRMED"
+      },
+      "not_functional_defect_certification": true,
+      "previous_level": "E2",
+      "recovery_evaluable": true,
+      "registered_level": "E4",
+      "unit_id": "rich-toolkit/K07_COLUMNS",
+      "unit_status": "RECOVERED_TWO_BLOCKS"
+    }
+  ],
+  "registered_suite_sessions": 30,
+  "returncode_counts": {
+    "0": 4,
+    "1": 26
+  },
+  "reviewer": "Reviewer 001",
+  "schedule_sha256": "9474b2a4920baeaf75a7e8421a64ef9dfbc862ccd9414c2c9da1b8efdf88df39",
+  "schema_version": "pyhost-context/reviewer001-S2-results-closure/1.0",
+  "scope_limits": [
+    "All original 30 attempts, ledger, raw artifacts, assessments and original adjudication retained.",
+    "No rerun, replacement sample, new context/value/semantic mutant, S1b replay, S3 extension or tool repro authorized.",
+    "Typer baseline drift is not negative evidence; three historical E2 remain.",
+    "G1 and historical S3 limited endpoints remain unchanged. No publication tier certified.",
+    "No complete interpreter distribution, dependency closure installation or shell ancestry event was independently replayed by this review."
+  ],
+  "signed_at_utc": "2026-10-20T02:13:47.857679+00:00",
+  "signed_by": "Reviewer 001"
+}

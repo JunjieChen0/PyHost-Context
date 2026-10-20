@@ -1,0 +1,62 @@
+{
+  "study": "PyHost-Context",
+  "phase": "admission_B0",
+  "admission_rules_frozen": false,
+  "admission_phase_authorized": false,
+  "admission_started": false,
+  "outer_timeout_seconds": 240,
+  "admission_baseline_repeats": 5,
+  "source": "/absolute/path/to/fetched/candidate/source",
+  "cwd": "/absolute/path/to/fetched/candidate/source",
+  "log_dir": "/absolute/path/to/run/logs",
+  "launch_whitelist": [
+    "PATH", "HOME", "TMPDIR", "PWD", "USER", "SHELL",
+    "PYTHONPATH", "PYTHONWARNINGS", "PYTHONIOENCODING",
+    "PYTEST_ADDOPTS", "PYTEST_PLUGINS", "PYTEST_DISABLE_PLUGIN_AUTOLOAD",
+    "CI", "FORCE_COLOR", "CLICOLOR", "CLICOLOR_FORCE", "PY_COLORS",
+    "TZ", "LC_ALL", "LC_CTYPE", "LANG", "LANGUAGE",
+    "PYTHONHASHSEED", "PYTHONCOERCECLOCALE", "PYTHONUTF8",
+    "NO_COLOR", "TERM", "COLUMNS", "LINES"
+  ],
+  "base_values": {
+    "PATH": "/absolute/path/to/cpython-3.11.9/bin:/usr/bin:/bin",
+    "HOME": "/absolute/path/to/run/home",
+    "TMPDIR": "/absolute/path/to/run/tmp",
+    "PWD": "/absolute/path/to/fetched/candidate/source",
+    "USER": "runner",
+    "SHELL": "/bin/sh",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1"
+  },
+  "baseline_condition": {
+    "TZ": {"state": "set", "value": "UTC"},
+    "LC_ALL": {"state": "unset"},
+    "LC_CTYPE": {"state": "unset"},
+    "LANG": {"state": "set", "value": "C.UTF-8"},
+    "LANGUAGE": {"state": "unset"},
+    "PYTHONHASHSEED": {"state": "set", "value": "0"},
+    "PYTHONCOERCECLOCALE": {"state": "unset"},
+    "PYTHONUTF8": {"state": "unset"},
+    "NO_COLOR": {"state": "unset"},
+    "TERM": {"state": "set", "value": "xterm-256color"},
+    "COLUMNS": {"state": "unset"},
+    "LINES": {"state": "unset"}
+  },
+  "producer_plugin": "integration/jsonl_producer.py",
+  "producer_pytest_args": ["-p", "jsonl_producer"],
+  "probe_entry_argv": [
+    "/absolute/path/to/cpython-3.11.9/bin/python3.11", "-c",
+    "import json,platform,sys,locale,time;print(json.dumps({'version':platform.python_version()}))"
+  ],
+  "test_entry_argv": [
+    "/absolute/path/to/cpython-3.11.9/bin/python3.11", "-m", "pytest",
+    "tests", "-v", "--tb=short", "-ra", "-p", "no:cacheprovider", "-o", "addopts="
+  ],
+  "test_timeout_seconds": 240,
+  "policy": {
+    "allow_skips": false,
+    "allow_xfails": false,
+    "allow_xpasses": false
+  },
+  "example_only": true,
+  "note": "示例配置；admission_phase_authorized 与 admission_rules_frozen 均为 false，运行入口会拒绝真实执行且不启动任何进程。已授权时 run_b0 会为 test_entry_argv 追加 producer_pytest_args（默认 -p jsonl_producer，指向 producer_plugin），并在冻结启动环境之上叠加 PYTHONPATH 与 PYHOST_JSONL_PATH 以观察 native JSONL。"
+}

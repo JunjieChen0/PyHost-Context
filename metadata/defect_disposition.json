@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "effect": "All six typer recovery blocks remain NOT_EVALUABLE_BASELINE_DRIFT; historical E2 retained; no rerun authorized.",
+      "established": "S1b baseline failed; all 18 S2 typer sessions skipped with Test requires Bash. Each A1 differs at exactly this non-registered node.",
+      "id": "P-S2-1",
+      "not_established": "Actual shell ancestry at collection, detected shell value and parent-exit/reparenting event are not recorded in the submitted evidence. None and non-Bash both satisfy the skip predicate.",
+      "status": "BASELINE_DRIFT_CONFIRMED_CAUSE_PARTIALLY_SUPPORTED"
+    },
+    {
+      "analysis_only_guard_sha256": "7570f24fd74247a69ae0d03df4939df92393fd26c853529e3dc69c709170c1ec",
+      "change": "context['source_path'] -> context['source_root'] in parser run_dir_prefixes, exactly matching frozen run_matrix.run_one",
+      "effect": "All 30 sessions pass execution validity after same-byte reparse. Saved assessments, ledger and original adjudication are preserved. C0 and exact C5 rules are unchanged.",
+      "id": "P-S2-2",
+      "old_guard_sha256": "4c8fc0ced40fd445dc754ae442cb702b44a4a838446203a3cdc7dac8d325dcd4",
+      "old_parser_signature_node_counts": {
+        "other_12_sessions": 0,
+        "typer_16_sessions": 195,
+        "typer_K07_B_2_sessions": 278
+      },
+      "owner": "Reviewer 001",
+      "status": "REVIEWER_DEFECT_FIXED_ON_EXISTING_BYTES"
+    },
+    {
+      "blocks": 2,
+      "detail": "All differences are confined to module repr path spans, including pytest ellipsis rebalancing. Both path strings correspond to the same frozen module under their recorded batch root. Literal full-root replacement alone does not suffice because paths have already been elided.",
+      "effect": "Frozen exact-text C5 remains false for typer/K07. This descriptive comparison is not used to pass C5 or enlarge E2.",
+      "id": "P-S2-3",
+      "registered_signature_nodes": 8,
+      "status": "CROSS_BATCH_MODULE_REPR_PATH_DIFFERENCES_CONFIRMED_C5_NOT_WAIVED"
+    },
+    {
+      "detail": "195 differing signature nodes per typer session was not universal: K07 B sessions each have 278. The other 16 typer sessions each have 195.",
+      "id": "N1",
+      "status": "AUTHOR_COUNT_CORRECTED"
+    },
+    {
+      "detail": "Ten same-summary native changes per typer/K07 block (8 failed, 2 xfailed) match the closed S1b node set exactly. They are separately preserved, not new findings or additional E2 nodes.",
+      "id": "N2",
+      "status": "SAME_LABEL_SCOPE_REAFFIRMED"
+    },
+    {
+      "detail": "The old preparation anchors remain reading_chain=false. The present source-chain review separately certifies twine and rich-toolkit for the existing E4 gate. Historical anchors, rules and execution bindings are not rewritten.",
+      "id": "N3",
+      "status": "SIGNING_SCOPE_CLARIFIED"
+    }
+  ],
+  "schema_version": "pyhost-context/reviewer001-S2-defect-disposition/1.0"
+}

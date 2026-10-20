@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Environments and artifacts
+venv/
+.venv/
+env/
+wheelhouse/
+*.whl
+*.tar.gz
+*.zip
+
+# Run outputs
+runs/
+state/
+*.jsonl
+
+# OS
+.DS_Store

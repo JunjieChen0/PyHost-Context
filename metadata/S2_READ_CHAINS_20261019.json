@@ -1,0 +1,213 @@
+{
+  "batch_id": "next-S2-20261019",
+  "reviewer001_scope_note": "读取行可按冻结字节核对；representation_only、测试环境轴及机制归并在本件仅为作者候选解释，不作产品契约/独立机制认证。",
+  "schema_version": "pyhost-context/S2-read-chains/1.0",
+  "scope": "逐信号记录谁读取变量、何时读取、测试是否显式设置、受影响断言。同名环境键不自动等同于同一机制。",
+  "shared_dependency": {
+    "console_path": "state/s1b_20261019/venvs/typer/venv/lib/python3.11/site-packages/rich/console.py",
+    "console_sha256": "4533fc66963623a2a21447b501d6f51f8cfee7e14775178093a5e6eb61dc135a",
+    "name": "rich",
+    "note": "三个项目在 S1b 环境中安装同一 rich 15.0.0 wheel；读取层是 dependency（rich），不是各项目自身代码。",
+    "read_sites": {
+      "_term = self._environ.get(\"TERM\", \"\")": [
+        {
+          "line": 986,
+          "text": "_term = self._environ.get(\"TERM\", \"\")"
+        }
+      ],
+      "columns = self._environ.get(\"COLUMNS\")": [
+        {
+          "line": 685,
+          "text": "columns = self._environ.get(\"COLUMNS\")"
+        },
+        {
+          "line": 1030,
+          "text": "columns = self._environ.get(\"COLUMNS\")"
+        }
+      ],
+      "self._environ.get(\"NO_COLOR\", \"\") != \"\"": [
+        {
+          "line": 728,
+          "text": "else self._environ.get(\"NO_COLOR\", \"\") != \"\""
+        }
+      ],
+      "term = self._environ.get(\"TERM\", \"\").strip().lower()": [
+        {
+          "line": 808,
+          "text": "term = self._environ.get(\"TERM\", \"\").strip().lower()"
+        }
+      ]
+    },
+    "version": "15.0.0"
+  },
+  "shared_root_cause": {
+    "not_claimed": [
+      "不把同名环境键直接算作同一机制",
+      "不据此声称跨项目因果确认",
+      "不把 rich 依赖的存在等同于任一具体项目的产品缺陷"
+    ],
+    "statement": "五个单位共享 rich 15.0.0 依赖与读取层；是否共享独立根因须逐路径核验，不能由同名键或命中同组节点推出相同或不同机制。",
+    "status": "candidate_shared_dependency"
+  },
+  "signals": [
+    {
+      "affected_assertions": [
+        "152 个注册翻转节点，包含帮助、错误提示及其他 CLI 断言；不将全部节点认证为帮助排版断言。"
+      ],
+      "mechanism_tag": "representation_only",
+      "project_lines": {
+        "MAX_WIDTH = int(_TERMINAL_WIDTH)": [
+          {
+            "line": 73,
+            "text": "MAX_WIDTH = int(_TERMINAL_WIDTH) if _TERMINAL_WIDTH else None"
+          }
+        ],
+        "width=MAX_WIDTH": [
+          {
+            "line": 161,
+            "text": "width=MAX_WIDTH,"
+          },
+          {
+            "line": 772,
+            "text": "width=MAX_WIDTH,"
+          }
+        ]
+      },
+      "project_path": "typer/rich_utils.py",
+      "read_site": {
+        "file": "rich/console.py",
+        "lines": [
+          {
+            "line": 685,
+            "text": "columns = self._environ.get(\"COLUMNS\")"
+          },
+          {
+            "line": 1030,
+            "text": "columns = self._environ.get(\"COLUMNS\")"
+          }
+        ]
+      },
+      "reader": "rich.console.Console.__init__ / Console.size",
+      "test_environment_note": "typer 测试不设置 COLUMNS；CliRunner 继承环境",
+      "test_sets_environment": false,
+      "unit_id": "typer/K07_COLUMNS",
+      "when_read": "每次 _get_rich_console() 构造 Console 时（帮助渲染入口）"
+    },
+    {
+      "affected_assertions": [
+        "tests/test_tutorial/test_printing/test_tutorial001.py::test_cli",
+        "tests/test_tutorial/test_printing/test_tutorial002.py::test_cli",
+        "normalize_rich_output 以 ANSI 转义为占位符；无颜色时占位符缺失"
+      ],
+      "mechanism_tag": "representation_only",
+      "read_site": {
+        "file": "rich/console.py",
+        "lines": [
+          {
+            "line": 728,
+            "text": "else self._environ.get(\"NO_COLOR\", \"\") != \"\""
+          }
+        ]
+      },
+      "reader": "rich.console.Console.__init__（no_color）",
+      "test_environment_note": "测试固定 force_terminal 与宽度，未设置 NO_COLOR",
+      "test_sets_environment": false,
+      "unit_id": "typer/K05_NO_COLOR",
+      "when_read": "测试内 Console(force_terminal=True, width=100) 构造时"
+    },
+    {
+      "affected_assertions": [
+        "tests/test_tutorial/test_printing/test_tutorial001.py::test_cli",
+        "tests/test_tutorial/test_printing/test_tutorial002.py::test_cli",
+        "TERM=dumb → color_system=None，ANSI 占位符缺失（与 NO_COLOR 路径不同）"
+      ],
+      "mechanism_tag": "representation_only",
+      "read_site": {
+        "file": "rich/console.py",
+        "lines": [
+          {
+            "line": 986,
+            "text": "_term = self._environ.get(\"TERM\", \"\")"
+          }
+        ]
+      },
+      "reader": "rich.console.Console._detect_color_system / is_dumb_terminal",
+      "test_environment_note": "测试未设置 TERM",
+      "test_sets_environment": false,
+      "unit_id": "typer/K06_TERM",
+      "when_read": "Console 构造时颜色系统判定"
+    },
+    {
+      "affected_assertions": [
+        "tests/test_main.py::test_exception_handling",
+        "tests/test_main.py::test_http_exception_handling[400-Bad Request-Error reason]",
+        "tests/test_main.py::test_http_exception_handling[599-Unknown Status-Another reason]",
+        "断言匹配 RED_ERROR（含 \\x1b[31m 前缀）；TERM=dumb 使 color_system=None"
+      ],
+      "mechanism_tag": "representation_only",
+      "project_lines": {
+        "rich.reconfigure(": [
+          {
+            "line": 33,
+            "text": "rich.reconfigure("
+          }
+        ]
+      },
+      "project_path": "twine/cli.py",
+      "read_site": {
+        "file": "rich/console.py",
+        "lines": [
+          {
+            "line": 808,
+            "text": "term = self._environ.get(\"TERM\", \"\").strip().lower()"
+          }
+        ]
+      },
+      "reader": "rich.console.Console._detect_color_system（经 twine.cli.configure_output）",
+      "test_environment_note": "测试通过 monkeypatch 设置 argv，未设置 TERM",
+      "test_sets_environment": false,
+      "unit_id": "twine/K06_TERM",
+      "when_read": "twine.cli.configure_output() 调用 rich.reconfigure(force_terminal=True)"
+    },
+    {
+      "affected_assertions": [
+        "tests/test_json_output.py::test_human_mode_output_callback_can_print_with_toolkit",
+        "TaggedStyle 第二列 overflow=fold；宽度 40 时 URL 被折行，\"https://demo.fastapicloud.com\" 不再连续出现"
+      ],
+      "mechanism_tag": "representation_only",
+      "project_lines": {
+        "Column(no_wrap=False, overflow=\"fold\")": [
+          {
+            "line": 104,
+            "text": "Column(no_wrap=False, overflow=\"fold\"),"
+          }
+        ],
+        "Column(width=self.tag_width + 2, no_wrap=True)": [
+          {
+            "line": 103,
+            "text": "Column(width=self.tag_width + 2, no_wrap=True),"
+          }
+        ]
+      },
+      "project_path": "src/rich_toolkit/styles/tagged.py",
+      "read_site": {
+        "file": "rich/console.py",
+        "lines": [
+          {
+            "line": 685,
+            "text": "columns = self._environ.get(\"COLUMNS\")"
+          },
+          {
+            "line": 1030,
+            "text": "columns = self._environ.get(\"COLUMNS\")"
+          }
+        ]
+      },
+      "reader": "rich.console.Console.__init__（ToolkitConsole 继承）",
+      "test_environment_note": "测试未设置 COLUMNS",
+      "test_sets_environment": false,
+      "unit_id": "rich-toolkit/K07_COLUMNS",
+      "when_read": "ToolkitConsole(theme=...) 构造时（每个 RichToolkit 实例）"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "pyhost-context/evidence-hashes/1.0",
+  "note": "Hashes bind the dossier claims to bytes in the author workspace; they are not part of the submitted manuscript.",
+  "entries": [
+    {
+      "path": "pyhost-context/extension/PROTOCOL_v1.1.md",
+      "bytes": 26555,
+      "sha256": "936355f8ee2fe7c59d2f98571b627f5c4f6ff191ef1f8bb81138dc1007966030"
+    },
+    {
+      "path": "pyhost-context/extension/amendments/SOURCE_TREE_ARTIFACT_RESOLUTION_DEFECT.md",
+      "bytes": 5725,
+      "sha256": "ed29d0845440d556d0b1cfbad16dc02051ce12b1f0ab44b91ce95f3725336fcf"
+    },
+    {
+      "path": "pyhost-context/extension/freeze/ADMISSION_STATUS.md",
+      "bytes": 26313,
+      "sha256": "37c3e6aaaa449cb762685277daebffdb3838e847aa1040d88457f9ee6a992bcf"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/s1b_20261019/S1B_PRE_RUN_COMMITMENT_20261019.json",
+      "bytes": 8367,
+      "sha256": "9ac5ff9078c884e3e0187c18d27c7faa7d260091af2d414cad0d826e20e1ed75"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/s1b_20261019/S1B_ROSTER_20261019.json",
+      "bytes": 2149,
+      "sha256": "0ae52ce2719a57dda7325c7153bcaf18683dbb13fcdbb4f7c0328c3c0e51c8d2"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/s2_20261019/S2_PRE_RUN_COMMITMENT_20261019.json",
+      "bytes": 17471,
+      "sha256": "efc41183ee97f3c97345b27080ac0847af374290c9cb8673b303568a1d1a3b83"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/s2_20261019/S2_READ_CHAINS_20261019.json",
+      "bytes": 7848,
+      "sha256": "9d3aea24a0e65d5e86cc0771b0d9ccd29d636880afc3a984bc6501a29961c957"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/s2_closure_20261020/REVIEWER001_CLOSURE.json",
+      "bytes": 4526,
+      "sha256": "b540f519fa821670cfce43bcd347e11a37a39847a1ab9b1ac6e9f5dbcb7aa462"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/s2_closure_20261020/S2_REGISTRATION_ADDENDUM_20261020.json",
+      "bytes": 5036,
+      "sha256": "27ae34e09daddff1a4c62a156ce6d025fd5542be60512bd4bdb90a3254a8fa41"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/s2_closure_20261020/defect_disposition.json",
+      "bytes": 2944,
+      "sha256": "21ec583b1fc789f59d2bf15983109ab832dd5d3b0368a15e5af2a2290f7d4bb2"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/s2_closure_20261020/registered_levels.json",
+      "bytes": 2208,
+      "sha256": "733fc1696fb5abb2e2ef66193484d099a34ee8a6c352af6aa7cd7be00c816f7a"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/s2_closure_20261020/verification/recompute_review.json",
+      "bytes": 2483,
+      "sha256": "27dd50cfc5625723b145c69d36cc0258a288692f0ddec59a754af846bd8edc5e"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/EVIDENCE_CONSOLIDATION.md",
+      "bytes": 5688,
+      "sha256": "34fb68f1ab60da375bfa32531b4f31d0c47b34a9b103d7ff6e884ebc45dc4d47"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/results/reviewed_accounting.json",
+      "bytes": 12061,
+      "sha256": "ea0bd5f172386055b2d6f8ba76f3d996b57bc6fecb4282e406aa310800eca77f"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/state/s1b_20261019/S1B_ANALYSIS_20261019.json",
+      "bytes": 79951,
+      "sha256": "8f130dc4cd1345185043a782fbc9505d45867b9954b1b6305bbb435fae95b864"
+    },
+    {
+      "path": "pyhost-context/extension/next_phase/state/s2_20261019/adjudication.json",
+      "bytes": 92802,
+      "sha256": "51b9c668269440e6500759769eae5ed5f913ba09b7d99581efde093ce01c0ed9"
+    },
+    {
+      "path": "pyhost-context/extension/reviews/reviewer001_artifact_identity_20261016/REVIEWER001_RULING.md",
+      "bytes": 6652,
+      "sha256": "b13e4b1a6aa96b88f62d1b8d42321c9d370c5a9826a4b1629aa7a2d8a62a4828"
+    }
+  ]
+}

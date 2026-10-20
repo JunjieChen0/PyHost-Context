@@ -1,0 +1,387 @@
+{
+  "RQ1_strata": {
+    "S1b": {
+      "E2_registered_signals": 5,
+      "baseline_failures_retained": true,
+      "calls": 450,
+      "independent_B0_calls": 225,
+      "matrix_calls": 225,
+      "projects": 5,
+      "toolchain_strata_not_pooled_with_primary": true,
+      "units": 40
+    },
+    "exploration": {
+      "independent_B0_calls": 810,
+      "matrix_calls": 810,
+      "projects": 18,
+      "unit_categories": {
+        "no_observed_new_flip": 134,
+        "operational_signal": 2,
+        "unresolved_or_ineligible": 8
+      },
+      "units": 144
+    },
+    "validation": {
+      "calls": 630,
+      "projects": 7,
+      "two_timeouts_already_inside_630": true,
+      "unit_categories": {
+        "no_observed_new_flip": 47,
+        "operational_signal": 1,
+        "unresolved_or_ineligible": 8
+      },
+      "units": 56
+    }
+  },
+  "S3": {
+    "20_failed_calls_and12_technical_cells_are_overlapping_views_not_additive": true,
+    "corrective_12_repair_cell_labels": {
+      "NOT_EVALUABLE_BASELINE_FAILURE": 3,
+      "NO_DETECTION_NO_REFERENCE": 6,
+      "PRE_EXISTING_BLIND_SPOT": 3
+    },
+    "independent_original_suite_blindspots": 1,
+    "old_and_new_denominators_not_merged": true,
+    "original_108_repair_cell_labels": {
+      "CHECK_NOT_EXECUTED": 8,
+      "CONTEXT_RESTRICTED": 3,
+      "NOT_EVALUABLE_BASELINE_FAILURE": 42,
+      "NOT_EVALUABLE_MISSING_ACTIVATION": 19,
+      "RETAINED": 9,
+      "RETAINED_OUTSIDE_REQUESTED_CONTEXT": 15,
+      "TECHNICAL_FAILURE": 12
+    },
+    "original_240_status": {
+      "completed": 220,
+      "failed": 20
+    },
+    "registered_attempts": 296,
+    "retained_readings": 9,
+    "same_context_degradation_signed": 0,
+    "suite_calls": 224,
+    "witness_calls": 72
+  },
+  "claim_limits": {
+    "G1_is_internal_rule_not_universal_CCF_B_requirement": true,
+    "G1_satisfied": false,
+    "cross_project_observed_differences_can_be_reported_at_their_registered_levels": true,
+    "independent_cross_project_mechanism_G1_not_established": true,
+    "next_experiment_or20_to30_unit_threshold_created": false,
+    "no_new_S2_or_repro_authorization": true,
+    "no_new_candidate_or_tool_calls": true,
+    "publication_tier_certified": false,
+    "sample_rarity_or_ecosystem_prevalence_signed": false
+  },
+  "cost_scope": {
+    "author_reported_unverified_host_snapshot": {
+      "extension_tree_bytes": 16278340561,
+      "global_inventory_or_human_effort_not_supplied": true,
+      "review_directories": 15
+    },
+    "claim_admission_or_review_is_dominant_cost_signed": false,
+    "covered_registered_calls": 3425,
+    "measured_partial_duration_sums": {
+      "S1b_suite_sessions": {
+        "covered_records": 450,
+        "meaning": "sum of this recorded duration field only; excludes unmeasured setup, other processes and human effort; not whole-project wall time or CPU",
+        "seconds": "5592.8095909360083571"
+      },
+      "S3_corrective_suite_and_witness": {
+        "covered_records": 56,
+        "meaning": "sum of this recorded duration field only; excludes unmeasured setup, other processes and human effort; not whole-project wall time or CPU",
+        "seconds": "303.312"
+      },
+      "S3_original_suite_and_witness": {
+        "covered_records": 240,
+        "meaning": "sum of this recorded duration field only; excludes unmeasured setup, other processes and human effort; not whole-project wall time or CPU",
+        "seconds": "611.484"
+      },
+      "exploration_suite_sessions": {
+        "covered_records": 1620,
+        "meaning": "sum of this recorded duration field only; excludes unmeasured setup, other processes and human effort; not whole-project wall time or CPU",
+        "seconds": "10489.38653423200231802"
+      },
+      "native_cli_wall_seconds": {
+        "covered_records": 23,
+        "meaning": "sum of this recorded duration field only; excludes unmeasured setup, other processes and human effort; not whole-project wall time or CPU",
+        "seconds": "2055.649264262000947"
+      }
+    },
+    "unmeasured_or_outside_coverage": [
+      "earlier extension admissions and artifact-identity re-admissions",
+      "boot/interpreter/installer/dependency probes",
+      "worker and helper subprocesses",
+      "human review time",
+      "known interrupted attempt duration",
+      "other development and preparation work"
+    ],
+    "whole_project_processes_or_total_cost_known": false
+  },
+  "denominator_rules": [
+    "Keep all 3056 registered research calls, including 20 old C-M2 technical failures and the two yaspin timeouts.",
+    "Keep all 144 exploration and 56 validation units; the 8 isodate and 8 yaspin units are unresolved/ineligible, not negative or removed.",
+    "Keep all 108 original S3 repair cells and all12 corrective repair cells in their separate accounting; report eligibility by endpoint.",
+    "Do not add process attempts, repair cells, units and projects or subtract overlapping technical-failure views.",
+    "Never use3056 or3425 as an independent statistical sample size or ecosystem prevalence denominator."
+  ],
+  "highest_registered_unit_levels": [
+    {
+      "condition": "K05_NO_COLOR",
+      "highest_signed_level": "E4",
+      "project": "rich-argparse",
+      "stratum": "exploration"
+    },
+    {
+      "condition": "K07_COLUMNS",
+      "highest_signed_level": "E4",
+      "project": "rich-argparse",
+      "stratum": "exploration"
+    },
+    {
+      "condition": "K07_COLUMNS",
+      "highest_signed_level": "E3",
+      "prior_E2_registration_retained_not_additional_unit": true,
+      "project": "rich-rst",
+      "stratum": "validation"
+    },
+    {
+      "condition": "K07_COLUMNS",
+      "highest_signed_level": "E2",
+      "project": "typer",
+      "stratum": "S1b"
+    },
+    {
+      "condition": "K05_NO_COLOR",
+      "highest_signed_level": "E2",
+      "project": "typer",
+      "stratum": "S1b"
+    },
+    {
+      "condition": "K06_TERM",
+      "highest_signed_level": "E2",
+      "project": "typer",
+      "stratum": "S1b"
+    },
+    {
+      "condition": "K06_TERM",
+      "highest_signed_level": "E2",
+      "project": "twine",
+      "stratum": "S1b"
+    },
+    {
+      "condition": "K07_COLUMNS",
+      "highest_signed_level": "E2",
+      "project": "rich-toolkit",
+      "stratum": "S1b"
+    }
+  ],
+  "native_tool": {
+    "capture_totals": {
+      "direct_calls": 310,
+      "direct_successful_spawns": 310,
+      "discovery_calls": 23,
+      "suite_calls": 287
+    },
+    "equal_intervention_or_strategy_superiority_claim": false,
+    "final_report_pairs_from_closed_reference": 21,
+    "prepared_cohort_projects": 25,
+    "projects_with_direct_capture": 23,
+    "worker_process_count_measured": false
+  },
+  "projects": {
+    "original_26_mechanical_selection_claim_not_recertified": true,
+    "preparation_inclusive_project_names_in_covered_snapshots": 50,
+    "primary_exploration_and_validation": {
+      "count": 25,
+      "names": [
+        "about-time",
+        "boolean-py",
+        "docstring-parser",
+        "docutils",
+        "fire",
+        "flake8-bugbear",
+        "flaky",
+        "h5netcdf",
+        "isodate",
+        "jinxed",
+        "leather",
+        "mock",
+        "patsy",
+        "prompt-toolkit",
+        "python-dotenv",
+        "rich-argparse",
+        "rich-rst",
+        "sqlparse",
+        "srsly",
+        "tabulate",
+        "text-unidecode",
+        "translationstring",
+        "x-wr-timezone",
+        "yamllint",
+        "yaspin"
+      ]
+    },
+    "research_registered_project_names": {
+      "count": 30,
+      "names": [
+        "about-time",
+        "boolean-py",
+        "docstring-parser",
+        "docutils",
+        "fire",
+        "flake8-bugbear",
+        "flaky",
+        "h5netcdf",
+        "isodate",
+        "jinxed",
+        "leather",
+        "mock",
+        "patsy",
+        "prompt-toolkit",
+        "pytest-xdist",
+        "python-dotenv",
+        "rich-argparse",
+        "rich-rst",
+        "rich-toolkit",
+        "sqlparse",
+        "srsly",
+        "structlog",
+        "tabulate",
+        "text-unidecode",
+        "translationstring",
+        "twine",
+        "typer",
+        "x-wr-timezone",
+        "yamllint",
+        "yaspin"
+      ]
+    },
+    "supplementary_S1b": {
+      "count": 5,
+      "names": [
+        "pytest-xdist",
+        "rich-toolkit",
+        "structlog",
+        "twine",
+        "typer"
+      ]
+    },
+    "with_at_least_one_A6_A7_or_research_registration_in_covered_snapshots": {
+      "count": 48,
+      "names": [
+        "about-time",
+        "argparse",
+        "boolean-py",
+        "dill",
+        "docstring-parser",
+        "docutils",
+        "fire",
+        "flake8-bugbear",
+        "flaky",
+        "h5netcdf",
+        "hatch",
+        "ipython",
+        "isodate",
+        "jinxed",
+        "joblib",
+        "leather",
+        "mock",
+        "mpmath",
+        "mypy-extensions",
+        "patsy",
+        "pdm",
+        "pluggy",
+        "prompt-toolkit",
+        "ptyprocess",
+        "pylint",
+        "pytest-cov",
+        "pytest-json-ctrf",
+        "pytest-xdist",
+        "python-dateutil",
+        "python-dotenv",
+        "rich-argparse",
+        "rich-click",
+        "rich-rst",
+        "rich-toolkit",
+        "sqlparse",
+        "srsly",
+        "structlog",
+        "sympy",
+        "tabulate",
+        "text-unidecode",
+        "toml",
+        "translationstring",
+        "twine",
+        "typer",
+        "tzdata",
+        "x-wr-timezone",
+        "yamllint",
+        "yaspin"
+      ],
+      "not_number_of_eligible_research_projects": true
+    }
+  },
+  "provenance_limits": [
+    "Some source snapshots are ledgers or signed derived analyses rather than raw per-test files; this review does not claim raw reanalysis of every call.",
+    "No full environmental/interpreter/wheel reacquisition certification is added.",
+    "CCF-B contribution sufficiency is not decided by completion counts, publication-tier labels, or the G1 rule alone."
+  ],
+  "registered_calls": {
+    "OS_process_total": null,
+    "admission_S1a_and_D_only": 59,
+    "covered_registration_total": 3425,
+    "extra_interruption_source": "validation position 87, previously disclosed; not in 630 ledger and not a new rerun by this review",
+    "global_attempts_total": null,
+    "known_additional_unregistered_interruption_attempts": 1,
+    "meaning": "heterogeneous registered call entries; retain technical failures/timeouts and keep batches separated",
+    "native_direct_pytest_calls": 310,
+    "research_by_batch": {
+      "S1b": 450,
+      "S3_corrective": 56,
+      "S3_original": 240,
+      "exploration_main_and_independent_B0": 1620,
+      "exploration_recovery": 12,
+      "exploration_repair": 28,
+      "validation_closure": 20,
+      "validation_main_and_independent_B0": 630
+    },
+    "research_call_kinds": {
+      "pytest_suite_session_calls": 2984,
+      "standalone_witness_calls": 72
+    },
+    "research_total": 3056,
+    "statistical_sample_size": null,
+    "whole_project_admission_total": null
+  },
+  "repair_endpoints": {
+    "exploration": {
+      "denominator": 6,
+      "limited": true,
+      "passed": 6,
+      "projects": 1,
+      "source": "reference/closed_records/exploration_repair_signoff.json",
+      "units": 2
+    },
+    "not_combined_with_S3_cell_labels_as_one_success_rate": true,
+    "validation": {
+      "denominator": 3,
+      "limited_content_obligations": true,
+      "passed": 3,
+      "projects": 1,
+      "units": 1
+    }
+  },
+  "same_rich_rst_unit_not_counted_twice_for_screening_E2_and_E3": true,
+  "schema_version": "pyhost-context/reviewer001-qualified-accounting/1.1",
+  "scope": "existing evidence consolidation; inherited prior findings, no new raw-test audit or candidate execution",
+  "sealed_feasibility_separate": {
+    "core": 270,
+    "formal_calls": 336,
+    "functional_obligation_witness": 54,
+    "has_ABC_repair_endpoint_in_this_stage": false,
+    "recovery": 12,
+    "scope": "historical closed stage counts carried forward, not a new raw replay or OS process count",
+    "successful_archived_calls": 337,
+    "successful_pilot": 1
+  }
+}

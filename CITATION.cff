@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or the associated evidence, please cite this repository and the archived record once its DOI is assigned."
+title: "PyHost-Context: single-key perturbation study of terminal-environment assumptions in Python test suites"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Junjie
+    orcid: "https://orcid.org/0009-0002-3499-3621"
+    affiliation: "School of Computer Science and Engineering, Nanjing University of Science and Technology"
+repository-code: "https://github.com/JunjieChen0/PyHost-Context"
+url: "https://github.com/JunjieChen0/PyHost-Context"
+date-released: "2026-10-20"
+version: "0.1.0"
+keywords:
+  - flaky tests
+  - test environment
+  - terminal rendering
+  - Python
+  - empirical software engineering
+abstract: >-
+  Code, protocols and evidence metadata for a study of how terminal-environment keys
+  (COLUMNS, TERM and NO_COLOR) can change Python test outcomes, using committed
+  single-key perturbation, A1-B-A2 recovery blocks and an E0-E4 evidence ladder.

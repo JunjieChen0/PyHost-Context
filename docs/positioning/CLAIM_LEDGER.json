@@ -1,0 +1,425 @@
+{
+  "schema_version": "pyhost-context/submission-claim-ledger/1.2",
+  "created_at_utc": "2026-10-20T04:00:00Z",
+  "supersedes": {
+    "path": "submission_dossier_REV1_20261020/CLAIM_LEDGER.json",
+    "note": "REV2 applies D1-D3 from REV1_ACCEPTED_WITH_REVIEWER_FACTUAL_ADDENDUM; earlier R1-R5/N1-N2 remain in force."
+  },
+  "target": {
+    "journal": "Software Quality Journal",
+    "publisher": "Springer",
+    "model": "hybrid",
+    "research_article_type": "Original Paper",
+    "latex_template": "sn-jnl",
+    "abstract_word_range": [
+      150,
+      250
+    ],
+    "keyword_range": [
+      4,
+      6
+    ],
+    "ccf_rank": "C (third-party sources; official CCF catalogue not re-verified)",
+    "fit": "software quality, software testing, measurement, case studies"
+  },
+  "source_snapshots": {
+    "base": {
+      "path": "pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/results/reviewed_accounting.json",
+      "sha256": "ea0bd5f172386055b2d6f8ba76f3d996b57bc6fecb4282e406aa310800eca77f",
+      "role": "pre-S2 signed accounting snapshot"
+    },
+    "s2": {
+      "path": "pyhost-context/extension/next_phase/s2_closure_20261020/REVIEWER001_CLOSURE.json",
+      "sha256": "b540f519fa821670cfce43bcd347e11a37a39847a1ab9b1ac6e9f5dbcb7aa462",
+      "role": "S2 signed closure snapshot"
+    }
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "type": "method",
+      "statement": "本研究的贡献是一套分阶段运行前承诺的单键扰动操作化协议：单位 = 项目 × 条件，筛查每项目 8 个键；恢复块只对选定合格单位执行 A1→B→A2，两块分别调度（不主张统计独立），E0—E4 等级把观察、基线、身份/阶段/签名、恢复与读取链分开；不主张 A1→B→A2 设计优先权，也不声称全阶段一次性预注册。",
+      "evidence": [
+        {
+          "path": "pyhost-context/extension/PROTOCOL_v1.1.md",
+          "role": "协议规则与阶段约束"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s2_20261019/S2_PRE_RUN_COMMITMENT_20261019.json",
+          "role": "S2 运行前承诺"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s1b_20261019/S1B_PRE_RUN_COMMITMENT_20261019.json",
+          "role": "S1b 运行前承诺"
+        }
+      ],
+      "denominator": "240 个筛查单位；恢复块只对选定合格单位执行，不是每个筛查单位都做恢复",
+      "level": "method operationalization",
+      "numeric_assertions": {
+        "exploration_units": 144,
+        "validation_units": 56,
+        "s1b_units": 40,
+        "screened_units": 240
+      },
+      "requires": [
+        "分阶段",
+        "不主张",
+        "A1→B→A2",
+        "只对选定合格单位"
+      ],
+      "must_not_contain": [
+        "已完成全部预注册",
+        "设计优先权已确认",
+        "首创",
+        "每个筛查单位都做恢复"
+      ],
+      "allowed_wording": "We operationalize a protocol that combines single-key perturbation, committed A1-B-A2 recovery blocks and an evidence ladder; we do not claim priority for the design.",
+      "forbidden_wording": "We invented A1-B-A2; all stages were pre-registered at once; the protocol is proven novel."
+    },
+    {
+      "id": "C2",
+      "type": "empirical",
+      "statement": "S1b 在三个项目确认五个 E2 单位；S2 仅对这五个选定单位执行两块恢复后，twine/K06_TERM 与 rich-toolkit/K07_COLUMNS 登记 E4，typer 三单位因注册基线未复现而维持 E2、恢复不可评价。两个 E4 是单位，不是两个独立机制。",
+      "evidence": [
+        {
+          "path": "pyhost-context/extension/next_phase/state/s1b_20261019/S1B_ANALYSIS_20261019.json",
+          "role": "S1b 五信号登记"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s2_closure_20261020/REVIEWER001_CLOSURE.json",
+          "role": "S2 单位级登记"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s2_closure_20261020/S2_REGISTRATION_ADDENDUM_20261020.json",
+          "role": "S2 登记附件与等级分布"
+        }
+      ],
+      "denominator": "5 个 S1b 单位 × 2 块 × 3 阶段 = 30 个 S2 会话",
+      "level": "E4: 2 units; E2: 3 units",
+      "numeric_assertions": {
+        "s2_e4_units": 2,
+        "s2_e2_units": 3,
+        "s2_sessions": 30
+      },
+      "requires": [
+        "两个 E4",
+        "三单位",
+        "不是两个独立机制"
+      ],
+      "must_not_contain": [
+        "独立机制 2",
+        "五个信号全部恢复"
+      ],
+      "allowed_wording": "Two S2 units reached E4 and three remained E2 because recovery was not evaluable; units are not independent mechanisms.",
+      "forbidden_wording": "All five signals were recovered; the two E4 units are two independent mechanisms."
+    },
+    {
+      "id": "C3",
+      "type": "empirical",
+      "statement": "五个 S1b 单位的注册翻转集在 S2 全部 10 个块中复现（152/2/2/3/1 个节点）；该事实不替代 C0/C5 与恢复资格，也不把 typer 三单位变成阴性。",
+      "evidence": [
+        {
+          "path": "pyhost-context/extension/next_phase/s2_closure_20261020/registered_levels.json",
+          "role": "S2 单位状态"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/state/s2_20261019/adjudication.json",
+          "role": "S2 判定原始记录"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s2_closure_20261020/verification/recompute_review.json",
+          "role": "只读复算结果"
+        }
+      ],
+      "denominator": "10 个 S2 块（5 单位 × 2 块）",
+      "level": "descriptive",
+      "numeric_assertions": {
+        "s2_blocks": 10
+      },
+      "requires": [
+        "10 个块",
+        "不替代"
+      ],
+      "must_not_contain": [
+        "恢复所有单位",
+        "阴性结果"
+      ],
+      "allowed_wording": "Flip sets were reproduced in all ten blocks even where baseline reproduction failed; this does not substitute the other gates.",
+      "forbidden_wording": "Reproducing the flip sets upgrades all units or proves recovery."
+    },
+    {
+      "id": "C4",
+      "type": "mechanism",
+      "statement": "五个 S1b 单位共享 rich 15.0.0 读取层，三条路径分别为 COLUMNS → Console 宽度、NO_COLOR → no_color、TERM=dumb → color_system=None；已关闭的 rich-argparse/K07_COLUMNS 读取层是 stdlib optparse；S2 新签读取链只覆盖 twine 与 rich-toolkit，不扩展为全部八个单位。",
+      "evidence": [
+        {
+          "path": "pyhost-context/extension/next_phase/s2_20261019/S2_READ_CHAINS_20261019.json",
+          "role": "五信号读取链"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s2_closure_20261020/REVIEWER001_CLOSURE.json",
+          "role": "S2 读取链签认范围"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s1b_20261019/S1B_ROSTER_20261019.json",
+          "role": "S1b 项目与工具链分层"
+        }
+      ],
+      "denominator": "5 个 S1b 单位；rich 15.0.0 的 4 个读取位置",
+      "level": "mechanism description",
+      "numeric_assertions": {
+        "s1b_signal_units": 5
+      },
+      "requires": [
+        "五个 S1b",
+        "stdlib optparse",
+        "不扩展为全部八个单位"
+      ],
+      "must_not_contain": [
+        "八个单位共享 rich",
+        "全部八单位共享"
+      ],
+      "allowed_wording": "The five supplementary units share a rich 15.0.0 read layer along three paths; the earlier rich-argparse COLUMNS unit reads through stdlib optparse.",
+      "forbidden_wording": "All eight units read the keys through rich; the number of units equals the number of mechanisms."
+    },
+    {
+      "id": "C5",
+      "type": "boundary",
+      "statement": "本研究未确认功能缺陷；不能把未确认缺陷反推为已证明全部差异都是纯表示变化；逐案表示层标签只覆盖该案已检查的断言，不外推到整产品契约或功能行为。",
+      "evidence": [
+        {
+          "path": "pyhost-context/extension/next_phase/s2_closure_20261020/REVIEWER001_CLOSURE.json",
+          "role": "不作功能缺陷认证"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/EVIDENCE_CONSOLIDATION.md",
+          "role": "表示层与契约措辞边界"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s2_closure_20261020/defect_disposition.json",
+          "role": "C5 精确文本判定"
+        }
+      ],
+      "denominator": "五个 S1b 单位及探索/验证的已登记单位",
+      "level": "boundary",
+      "numeric_assertions": {},
+      "requires": [
+        "未确认功能缺陷",
+        "逐案"
+      ],
+      "must_not_contain": [
+        "功能缺陷已确认",
+        "整产品契约符合性已证明"
+      ],
+      "allowed_wording": "Observed differences fall in the examined rendered-output assertions; no functional defect or whole-product contract compliance is certified.",
+      "forbidden_wording": "The study found functional bugs; every observed difference is proven to be pure representation."
+    },
+    {
+      "id": "C6",
+      "type": "scope",
+      "statement": "30 个项目名 = 主队列 25（探索 18 + 验证 7）+ 补充 S1b 5；主队列为下载量配额抽样，已知工件身份选择偏差按 10 / 4 / 11 口径披露：10 个未入选候选有 A6 错误源码收集记录，4 项停在依赖解析阶段，加 1 个入选项目共 11 项受限重验；补充层工具链不同；各阶段规则分别冻结，不是全部一次性预注册。",
+      "evidence": [
+        {
+          "path": "pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/results/reviewed_accounting.json",
+          "role": "项目名与分期分母"
+        },
+        {
+          "path": "pyhost-context/extension/amendments/SOURCE_TREE_ARTIFACT_RESOLUTION_DEFECT.md",
+          "role": "工件身份选择偏差"
+        },
+        {
+          "path": "pyhost-context/extension/freeze/ADMISSION_STATUS.md",
+          "role": "冻结栈淘汰与选择偏差"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s1b_20261019/S1B_ROSTER_20261019.json",
+          "role": "S1b 工具链分层"
+        },
+        {
+          "path": "pyhost-context/extension/reviews/reviewer001_artifact_identity_20261016/REVIEWER001_RULING.md",
+          "role": "10/4/11 身份裁定口径"
+        }
+      ],
+      "denominator": "30 个项目名；25 个主队列 + 5 个补充",
+      "level": "boundary",
+      "numeric_assertions": {
+        "project_names": 30,
+        "primary_projects": 25,
+        "supplementary_projects": 5,
+        "wrong_source_unselected": 10,
+        "resolver_only": 4,
+        "bounded_readmission_total": 11
+      },
+      "requires": [
+        "30 个项目名",
+        "选择偏差",
+        "10 / 4 / 11",
+        "分别冻结"
+      ],
+      "must_not_contain": [
+        "概率样本",
+        "无偏样本",
+        "14 个未入选"
+      ],
+      "allowed_wording": "In this download-rank quota sample with disclosed selection biases, eight project-condition units were registered; no prevalence estimate is made.",
+      "forbidden_wording": "The sample is a probability sample of the Python ecosystem; all 30 projects came from one unbiased uniform quota."
+    },
+    {
+      "id": "C7",
+      "type": "scope",
+      "statement": "登记研究调用 3,086 = 3,014 套件会话 + 72 见证；覆盖合计 3,455 = 3,086 + 59 + 310；3,056 / 2,984 / 3,425 仅为 S2 前快照。它们是工作量计数，不是样本量、进程总数或项目总成本。",
+      "evidence": [
+        {
+          "path": "pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/results/reviewed_accounting.json",
+          "role": "S2 前权威总账"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s2_closure_20261020/REVIEWER001_CLOSURE.json",
+          "role": "S2 的 30 个注册会话"
+        }
+      ],
+      "denominator": "登记调用（分 S2 前 / S2 后）",
+      "level": "accounting",
+      "numeric_assertions": {
+        "post_research_calls": 3086,
+        "post_suite_sessions": 3014,
+        "post_witness_calls": 72,
+        "post_covered_calls": 3455,
+        "pre_research_calls": 3056,
+        "pre_suite_sessions": 2984,
+        "pre_covered_calls": 3425
+      },
+      "requires": [
+        "3,086",
+        "3,014",
+        "3,455",
+        "S2 前"
+      ],
+      "must_not_contain": [
+        "独立样本",
+        "3,455 个进程"
+      ],
+      "allowed_wording": "We report 3,086 registered research calls after S2 as a workload count; 3,056 is the pre-S2 snapshot.",
+      "forbidden_wording": "The study analysed 3,086 independent samples; 3,455 processes were executed."
+    },
+    {
+      "id": "C8",
+      "type": "mutation",
+      "statement": "S3 原批 108 格中 9 个 RETAINED；纠错批 12 格中 3 个盲区标签指向同一个 S0 盲区；独立原套件盲区 1 个；已签降级 0 个，零不证明不存在降级。新旧分母分报，不合并。",
+      "evidence": [
+        {
+          "path": "pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/results/reviewed_accounting.json",
+          "role": "S3 判定分布与盲区计数"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/EVIDENCE_CONSOLIDATION.md",
+          "role": "S3 闭环口径"
+        }
+      ],
+      "denominator": "108 个原批修复格与 12 个纠错格，分报",
+      "level": "S3 limited endpoints",
+      "numeric_assertions": {
+        "s3_original_cells": 108,
+        "s3_retained": 9,
+        "s3_corrective_cells": 12,
+        "s3_blindspots": 1,
+        "s3_signed_degradation": 0
+      },
+      "requires": [
+        "108",
+        "12",
+        "同一个",
+        "不证明"
+      ],
+      "must_not_contain": [
+        "已证明不存在降级",
+        "套件能检出所有变异"
+      ],
+      "allowed_wording": "Nine retained readings, one independent original-suite blind spot and zero signed degradations were registered; zero does not prove absence.",
+      "forbidden_wording": "There is no degradation anywhere; the suites detect all relevant mutants."
+    },
+    {
+      "id": "C9",
+      "type": "repair",
+      "statement": "修复端点分报：探索 6/6 = 2 单位 × 3 策略；限定验证 3/3 = 1 单位 × 3 策略；不合并为 9/9。",
+      "evidence": [
+        {
+          "path": "pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/results/reviewed_accounting.json",
+          "role": "修复端点分母"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s3_consolidation_rev1_20261019/EVIDENCE_CONSOLIDATION.md",
+          "role": "端点限定说明"
+        }
+      ],
+      "denominator": "探索 2 单位 × 3 策略 = 6；验证 1 单位 × 3 策略 = 3",
+      "level": "endpoint-specific",
+      "numeric_assertions": {
+        "repair_exploration_passed": 6,
+        "repair_exploration_denominator": 6,
+        "repair_validation_passed": 3,
+        "repair_validation_denominator": 3
+      },
+      "requires": [
+        "6/6",
+        "3/3",
+        "不合并"
+      ],
+      "must_not_contain": [
+        "总成功率"
+      ],
+      "allowed_wording": "Repair results are reported per endpoint: 6/6 in exploration and 3/3 in the limited validation endpoint.",
+      "forbidden_wording": "The pooled repair success rate is 9/9."
+    },
+    {
+      "id": "C10",
+      "type": "instrument",
+      "statement": "typer 三单位在 S2 因注册基线未复现而恢复不可评价，维持 E2；不作阴性；C5 精确文本判定维持 false；父 shell 事件链未确认，根因保留未解决。",
+      "evidence": [
+        {
+          "path": "pyhost-context/extension/next_phase/s2_closure_20261020/REVIEWER001_CLOSURE.json",
+          "role": "不可评价登记"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s2_closure_20261020/defect_disposition.json",
+          "role": "C5 与基线漂移处置"
+        },
+        {
+          "path": "pyhost-context/extension/next_phase/s2_closure_20261020/S2_REGISTRATION_ADDENDUM_20261020.json",
+          "role": "P-S2-1/P-S2-3 更正"
+        }
+      ],
+      "denominator": "3 个 typer 单位 × 2 块",
+      "level": "not evaluable",
+      "numeric_assertions": {
+        "typer_s2_units": 3
+      },
+      "requires": [
+        "不可评价",
+        "不作阴性",
+        "未确认"
+      ],
+      "must_not_contain": [
+        "阴性结果",
+        "信号被推翻",
+        "C5 已豁免"
+      ],
+      "allowed_wording": "Three typer units remained E2 because recovery was not evaluable; this is not negative evidence.",
+      "forbidden_wording": "The typer effects disappeared; the signals were refuted; the C5 exact-text test now passes."
+    }
+  ],
+  "global_forbidden_claims": [
+    "ecosystem prevalence or rarity",
+    "functional defect certification",
+    "product contract violation",
+    "security impact",
+    "strategy superiority or safe elimination",
+    "G1 satisfied",
+    "certified publication tier or acceptance probability",
+    "absolute novelty or priority",
+    "independent mechanism count equal to unit count",
+    "3,086, 3,455, 3,056 or 3,425 as statistical sample size",
+    "one-shot pre-registration of all stages",
+    "all eight units share the rich read layer"
+  ]
+}

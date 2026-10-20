@@ -1,0 +1,108 @@
+{
+  "schema_version": "pyhost-context/literature-source-verification/1.1",
+  "retrieved_at_utc": "2026-10-20T00:00:00Z",
+  "supersedes": "submission_dossier_20261020/SOURCE_VERIFICATION.json",
+  "method": "Targeted primary-source checking plus publisher/Crossref/arXiv metadata. This is a narrative targeted search, not a systematic review. No citation was generated from memory without a matching fetched or inspected record. Reviewer 001's inspection levels are recorded separately from the author's metadata fetches; the review did not obtain the full Leinen et al. article.",
+  "entries": [
+    {
+      "id": "L1",
+      "title": "An empirical analysis of flaky tests",
+      "authors": ["Qingzhou Luo", "Farah Hariri", "Lamyaa Eloussi", "Darko Marinov"],
+      "venue": "Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2014)",
+      "pages": "643-653",
+      "doi": "10.1145/2635868.2635920",
+      "url": "https://doi.org/10.1145/2635868.2635920",
+      "inspection": "Original paper, sections 2-4, checked by Reviewer 001 at https://www.cs.cornell.edu/courses/cs5154/2021sp/resources/LuoETAL14FlakyTestsAnalysis.pdf",
+      "confirmed": "Manual examination of 201 likely flaky-test-fixing commits from 51 Apache projects, including causes, fixes and failure manifestation.",
+      "limit": "Not a rerun-statistics study; do not describe its core design that way."
+    },
+    {
+      "id": "L2",
+      "title": "An Empirical Study of Flaky Tests in Python",
+      "authors": ["Martin Gruber", "Stephan Lukasczyk", "Florian Krois", "Gordon Fraser"],
+      "venue": "2021 14th IEEE Conference on Software Testing, Verification and Validation (ICST)",
+      "pages": "148-158",
+      "doi": "10.1109/ICST49551.2021.00026",
+      "url": "https://arxiv.org/abs/2101.09077",
+      "inspection": "Full text sections II-III and abstract, checked by Reviewer 001 at https://arxiv.org/html/2101.09077v1",
+      "confirmed": "22,352 projects and 876,186 tests; detection, tracing and manual classification; order-dependent 59% and infrastructure 28% shares.",
+      "limit": "More than repeated verdict collection; no categorical separation between controlled condition dependence and the wider flaky literature."
+    },
+    {
+      "id": "L3",
+      "title": "The Effects of Computational Resources on Flaky Tests",
+      "authors": ["Denini Silva", "Martin Gruber", "Satyajit Gokhale", "Ellen Arteca", "Alexi Turcotte", "Marcelo d'Amorim", "Wing Lam", "Stefan Winter", "Jonathan Bell"],
+      "venue": "IEEE Transactions on Software Engineering",
+      "volume": 50,
+      "pages": "3104-3121",
+      "year": 2024,
+      "doi": "10.1109/TSE.2024.3462251",
+      "url": "https://doi.org/10.1109/TSE.2024.3462251",
+      "inspection": "Author accepted manuscript, abstract and experiment setup/Phase I, checked by Reviewer 001 at https://www.jonbell.net/preprint/tse24-raft.pdf",
+      "confirmed": "52 projects and 27 resource configurations; Phase I restricts individual resources as well as combinations, with repeated suite sessions.",
+      "limit": "Controlled single-factor experiments already exist; the terminal-key and recovery-procedure scope is the narrower difference."
+    },
+    {
+      "id": "L4",
+      "title": "A Systematic Evaluation of Environmental Flakiness in JavaScript Tests",
+      "authors": ["Negar Hashemi", "Amjed Tahir", "August Shi", "Shawn Rasheed", "Rachel Blagojevic"],
+      "venue": "ICST 2026; arXiv:2602.19098",
+      "arxiv": "2602.19098v1",
+      "url": "https://arxiv.org/abs/2602.19098",
+      "inspection": "Full text sections III, IV, VI and VIII, checked by Reviewer 001 at https://arxiv.org/html/2602.19098v1",
+      "confirmed": "Varies OS, Node.js and browsers; manually inspects failures; proposes a mitigation that skips or reports environment-dependent tests. Its categories include repeatable compatibility failures.",
+      "limit": "Contrast measured factors and endpoints, not an asserted absence of condition-dependent flakiness research."
+    },
+    {
+      "id": "L5",
+      "title": "A Survey of Flaky Tests",
+      "authors": ["Owain Parry", "Gregory M. Kapfhammer", "Michael Hilton", "Phil McMinn"],
+      "venue": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+      "volume_issue": "31(1), Article 17",
+      "year": 2022,
+      "author_pdf_year": 2021,
+      "doi": "10.1145/3476105",
+      "url": "https://doi.org/10.1145/3476105",
+      "inspection": "Author PDF sections 1, 3 and 5 plus bibliography, checked by Reviewer 001 at https://o-parry.github.io/papers/2021a.pdf and https://www.gregorykapfhammer.com/research/papers/parry2022/",
+      "confirmed": "76 papers; environmental and implementation dependence within a broad conception of flakiness; reviews targeted perturbation tools.",
+      "limit": "A missing terminal keyword is not proof of an unstudied category. Cite TOSEM 31(1), Article 17 (2022); the author PDF is dated October 2021."
+    },
+    {
+      "id": "L6",
+      "title": "An Empirical Study of Detected and Undetected Flaky Test Failures in Real-World CI Pipelines",
+      "authors": ["Fabian Leinen", "Martin Gruber", "Saadet Sena Erdogan", "Andreas Stahlbauer", "Alexander Pretschner"],
+      "venue": "IEEE Transactions on Software Engineering",
+      "year": 2026,
+      "pages": "1-21",
+      "doi": "10.1109/TSE.2026.3729363",
+      "url": "https://doi.org/10.1109/TSE.2026.3729363",
+      "artifact": "https://github.com/tum-i4/flaky-tests-in-ci",
+      "inspection": "Author institution metadata, abstract and replication README checked by Reviewer 001; full article not obtained.",
+      "confirmed": "8.8 billion executions from four projects; apparently deterministic failures validated with reruns in fresh original CI environments.",
+      "limit": "Do not reduce this study to passive CI-history mining. Because the full article was not obtained, no claim is made that it lacks a specific method."
+    },
+    {
+      "id": "VENUE",
+      "title": "Software Quality Journal",
+      "publisher": "Springer",
+      "publication_model": "hybrid",
+      "research_article_type": "Original Paper",
+      "latex_template": "sn-jnl",
+      "abstract_word_range": [150, 250],
+      "keyword_range": [4, 6],
+      "scope_summary": "Academic and practical knowledge about creating, using and maintaining software systems; quality management, methods, tools and products, including software testing, quality measurement and case studies.",
+      "scope_caveat": "The scope includes case studies; this does not mean the submission system offers a separate Case Study article type, and it is not a fit or acceptance guarantee.",
+      "ccf_rank_claim": "CCF C according to third-party indexes; the full official CCF classification page was not obtained, so the rank remains to be verified against the official catalogue.",
+      "guidelines_source": "https://link.springer.com/journal/11219/submission-guidelines",
+      "scope_source": "https://link.springer.com/journal/11219/aims-and-scope",
+      "review_role_note": "Reviewer 001 is the AI review role used in this conversation, not an independent human referee or journal reviewer. Actual AI method/analysis use should be disclosed under the journal policy."
+    }
+  ],
+  "limitations": [
+    "The CCF rank is not certified here; verify against the official CCF catalogue before submission.",
+    "Article types and formatting requirements must be read from the current submission guidelines at submission time.",
+    "The literature search is a targeted narrative search, not a systematic review; absence of a dedicated terminal-environment study is a search observation, not a proof of novelty.",
+    "Reviewer 001 did not obtain the full Leinen et al. article; no method-absence claim about that study is certified.",
+    "Bibliographic metadata does not establish the semantic correctness of any comparison; the comparison sentences are author arguments bounded by the recorded primary-source checks."
+  ]
+}

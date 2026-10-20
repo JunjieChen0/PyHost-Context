@@ -1,0 +1,111 @@
+{
+  "schema_version": "pyhost-context/S2-registration-addendum/1.0",
+  "batch_id": "next-S2-20261019",
+  "created_at_utc": "2026-10-20T00:00:00Z",
+  "closure": {
+    "package": "PyHost_S2_Reviewer001_Closure_20261020.zip",
+    "sha256": "52abe6ecb3be2129e8b6fedd1dc0a1f399e2670a1bb6bb9c65d222218ef203e3",
+    "decision": "S2_RESULTS_CLOSED_WITH_REVIEWER_PARSER_CORRECTION",
+    "signed_by": "Reviewer 001",
+    "signed_at_utc": "2026-10-20T02:13:47.857679+00:00"
+  },
+  "author_submission_sha256": "66996d639f59ab5b45906ec5c9afc32c24085dd77bb66391acbcd6399a238d3d",
+  "pre_run_commitment_hash": "5f85571e834db8e62907ab8c28949743eb84e0b496c80c482c4978196c1c9a52",
+  "schedule_sha256": "9474b2a4920baeaf75a7e8421a64ef9dfbc862ccd9414c2c9da1b8efdf88df39",
+  "registered_suite_sessions": 30,
+  "returncode_counts": {"0": 4, "1": 26},
+  "duration_seconds_field_sum": 573.682190672,
+  "duration_note": "仅 duration_seconds 字段合计；不是墙钟、CPU 成本或独立样本量。",
+  "registrations": [
+    {
+      "unit_id": "typer/K07_COLUMNS",
+      "previous_level": "E2",
+      "registered_level": "E2",
+      "block_statuses": ["NOT_EVALUABLE_BASELINE_DRIFT", "NOT_EVALUABLE_BASELINE_DRIFT"],
+      "recovery_evaluable": false,
+      "note": "两块仅 test_show_completion 基线结局不同；C5 精确文本另为 false。不作阴性。"
+    },
+    {
+      "unit_id": "typer/K05_NO_COLOR",
+      "previous_level": "E2",
+      "registered_level": "E2",
+      "block_statuses": ["NOT_EVALUABLE_BASELINE_DRIFT", "NOT_EVALUABLE_BASELINE_DRIFT"],
+      "recovery_evaluable": false,
+      "note": "同一非注册节点基线漂移；不作阴性。"
+    },
+    {
+      "unit_id": "typer/K06_TERM",
+      "previous_level": "E2",
+      "registered_level": "E2",
+      "block_statuses": ["NOT_EVALUABLE_BASELINE_DRIFT", "NOT_EVALUABLE_BASELINE_DRIFT"],
+      "recovery_evaluable": false,
+      "note": "同一非注册节点基线漂移；不作阴性。"
+    },
+    {
+      "unit_id": "twine/K06_TERM",
+      "previous_level": "E2",
+      "registered_level": "E4",
+      "block_statuses": ["BLOCK_CONFIRMED", "BLOCK_CONFIRMED"],
+      "recovery_evaluable": true,
+      "E4_gates": {"schedule_gate": true, "scope_identity": true, "reading_chain": true},
+      "note": "既有 E4 门槛；未新增或放宽判据。"
+    },
+    {
+      "unit_id": "rich-toolkit/K07_COLUMNS",
+      "previous_level": "E2",
+      "registered_level": "E4",
+      "block_statuses": ["BLOCK_CONFIRMED", "BLOCK_CONFIRMED"],
+      "recovery_evaluable": true,
+      "E4_gates": {"schedule_gate": true, "scope_identity": true, "reading_chain": true},
+      "note": "既有 E4 门槛；未新增或放宽判据。"
+    }
+  ],
+  "ledger_delta": {
+    "E2_to_E4": 2,
+    "E2_retained": 3,
+    "units_touched": 5
+  },
+  "level_distribution_after": {
+    "E4": 4,
+    "E3": 1,
+    "E2": 3,
+    "note": "按单位最高等级各登记一次；E4 四单位来自 rich-argparse（2）、twine（1）、rich-toolkit（1），不是四个独立机制。"
+  },
+  "reviewer_corrections_adopted": [
+    {
+      "id": "N1",
+      "statement": "P-S2-2 的签名差异不是每轮 195 个：16 个 typer 轮各 195 个，K07 的两个 B 轮各 278 个，其余 12 轮为 0。",
+      "author_previous_claim_withdrawn": "每轮 195 个差异节点。"
+    },
+    {
+      "id": "P-S2-1",
+      "statement": "基线漂移成立；shellingham 事件链（后台父 shell 退出导致 None）未由现有材料记录，根因保留未解决。"
+    },
+    {
+      "id": "P-S2-2",
+      "statement": "守卫前缀错误属复核方签署件缺陷；仅在只读分析中按 runner 实际口径修正，历史执行树不改写、不重跑。"
+    },
+    {
+      "id": "P-S2-3",
+      "statement": "8 个注册签名差异仅落在模块 repr 路径字段；C5 精确文本判定维持 false，不作放宽。"
+    },
+    {
+      "id": "N2",
+      "statement": "typer/K07 每块 10 个同结局原生变化（8 failed、2 xfailed）与旧 S1b 集合相同；不扩展 E2、不计新增发现。"
+    }
+  ],
+  "scope_limits": [
+    "E4 只支持冻结项目/版本/范围内对注册环境干预的变量归因；不认证功能缺陷、产品契约、策略优越性、生态频率或安全。",
+    "共享 rich 依赖、同名环境键与同组节点不折算为独立机制数。",
+    "G1 不因本批自动通过；不认证投稿档次。",
+    "S3 限定端点保持关闭；新增执行、S1b 重放、S3 扩展、新样本/上下文/变异、工具 repro 均未授权。",
+    "不要求额外准备件或回执复核循环。"
+  ],
+  "sources": {
+    "author_results": "PyHost_S2_Results_20261020.zip",
+    "author_results_sha256": "66996d639f59ab5b45906ec5c9afc32c24085dd77bb66391acbcd6399a238d3d",
+    "execution_clearance": "PyHost_S2_Reviewer001_Clearance_20261020.zip",
+    "execution_clearance_sha256": "165dd935d033a6a2ecad9df54aa47bde3d479843af05ce5c02a641f138aa3748",
+    "closure_reading_chain_review": "results/reading_chain_review.json in closure package"
+  }
+}

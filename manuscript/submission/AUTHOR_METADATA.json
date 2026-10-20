@@ -1,0 +1,78 @@
+{
+  "schema_version": "pyhost-context/submission-author-metadata/1.3",
+  "recorded_at_utc": "2026-10-20T00:00:00Z",
+  "source": "Author-provided in conversation on 2026-10-20",
+  "target_journal": "Software Quality Journal",
+  "publisher": "Springer",
+  "publication_model": "hybrid",
+  "article_type": "Original Paper",
+  "authors": [
+    {
+      "full_name": "Junjie Chen",
+      "given_name": "Junjie",
+      "family_name": "Chen",
+      "affiliation": "School of Computer Science and Engineering, Nanjing University of Science and Technology",
+      "postal_address": "No. 200, Xiaolingwei Street, Xuanwu District, Nanjing, Jiangsu Province, China, 210094",
+      "email": "junjie_chen@njust.edu.cn",
+      "corresponding": true,
+      "orcid": "0009-0002-3499-3621",
+      "phone": null
+    }
+  ],
+  "co_authors": [],
+  "co_author_status": "sole_author_confirmed",
+  "confirmed_by_author": {
+    "name": true,
+    "affiliation": true,
+    "email": true,
+    "corresponding_author": true,
+    "sole_author": true,
+    "postal_address": true,
+    "orcid": true,
+    "funding": true,
+    "competing_interests": true,
+    "data_availability_route": true,
+    "ai_use_disclosure_scope": true,
+    "suggested_reviewers": false,
+    "preprint_or_prior_submission": true
+  },
+  "funding": {
+    "has_funding": false,
+    "statement": "This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors."
+  },
+  "data_and_code": {
+    "route": "zenodo_and_github",
+    "confirmed": true,
+    "zenodo_doi": null,
+    "github_url": null,
+    "statement": "The frozen evidence bundle, commitment hashes, ledgers, raw-artifact counts and recomputation scripts will be deposited in Zenodo and GitHub.",
+    "pending": "Zenodo DOI and GitHub repository URL must be inserted before submission."
+  },
+  "ai_use_disclosure": {
+    "status": "author_provided",
+    "package_drafts_wording": false,
+    "source_language": "zh",
+    "source_text": "本研究使用 OpenAI ChatGPT 辅助审查实验协议、执行入口及分析程序，构造并运行合成反例，编写部分修正代码、复算脚本与审计工具，并对已提供的实验记录进行只读核验，包括文件哈希、账本完整性、统计分母、证据等级及研究结论的适用范围。此外，ChatGPT 还辅助核对相关文献的方法描述、期刊信息，以及研究主张与证据之间的一致性。我对最终采用的代码、分析结果与研究结论承担责任。",
+    "english_text": "This study used OpenAI ChatGPT to assist with reviewing the experimental protocol, execution entry points and analysis programs; constructing and running synthetic counterexamples; writing parts of the correction code, recomputation scripts and audit tools; and performing read-only verification of the provided experimental records, including file hashes, ledger integrity, statistical denominators, evidence levels and the scope of the research conclusions. ChatGPT also assisted in checking the method descriptions of related literature, journal information, and the consistency between the research claims and the evidence. I take responsibility for the code, analysis results and research conclusions that were finally adopted."
+  },
+  "preprint_and_prior_submission": {
+    "preprint": false,
+    "under_consideration_elsewhere": false
+  },
+  "working_title": "Terminal Environment Keys and Test Outcomes in Python Test Suites: A Single-Key Perturbation Study",
+  "title_alternatives": [
+    "Terminal Environment Keys and Test Outcomes in Python Projects: A Committed Single-Key Perturbation Protocol and a Bounded Study",
+    "When COLUMNS, TERM and NO_COLOR Change Test Outcomes: A Single-Key Perturbation Study of Python Test Suites"
+  ],
+  "notes": [
+    "Sole-author and corresponding-author status confirmed.",
+    "ORCID confirmed: 0009-0002-3499-3621.",
+    "No funding, no competing interests, and no preprint or prior submission confirmed.",
+    "Data and code route confirmed as Zenodo + GitHub; DOI and repository URL pending.",
+    "AI-use statement provided by the author; suggested reviewers remain open."
+  ],
+  "competing_interests": {
+    "has_competing_interests": false,
+    "statement": "The author declares no competing interests."
+  }
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "E4_gates": {
+      "reading_chain": false,
+      "schedule_gate": true,
+      "scope_identity": true
+    },
+    "block_statuses": {
+      "1": "NOT_EVALUABLE_BASELINE_DRIFT",
+      "2": "NOT_EVALUABLE_BASELINE_DRIFT"
+    },
+    "not_functional_defect_certification": true,
+    "previous_level": "E2",
+    "recovery_evaluable": false,
+    "registered_level": "E2",
+    "unit_id": "typer/K07_COLUMNS",
+    "unit_status": "NOT_EVALUABLE"
+  },
+  {
+    "E4_gates": {
+      "reading_chain": false,
+      "schedule_gate": true,
+      "scope_identity": true
+    },
+    "block_statuses": {
+      "1": "NOT_EVALUABLE_BASELINE_DRIFT",
+      "2": "NOT_EVALUABLE_BASELINE_DRIFT"
+    },
+    "not_functional_defect_certification": true,
+    "previous_level": "E2",
+    "recovery_evaluable": false,
+    "registered_level": "E2",
+    "unit_id": "typer/K05_NO_COLOR",
+    "unit_status": "NOT_EVALUABLE"
+  },
+  {
+    "E4_gates": {
+      "reading_chain": false,
+      "schedule_gate": true,
+      "scope_identity": true
+    },
+    "block_statuses": {
+      "1": "NOT_EVALUABLE_BASELINE_DRIFT",
+      "2": "NOT_EVALUABLE_BASELINE_DRIFT"
+    },
+    "not_functional_defect_certification": true,
+    "previous_level": "E2",
+    "recovery_evaluable": false,
+    "registered_level": "E2",
+    "unit_id": "typer/K06_TERM",
+    "unit_status": "NOT_EVALUABLE"
+  },
+  {
+    "E4_gates": {
+      "reading_chain": true,
+      "schedule_gate": true,
+      "scope_identity": true
+    },
+    "block_statuses": {
+      "1": "BLOCK_CONFIRMED",
+      "2": "BLOCK_CONFIRMED"
+    },
+    "not_functional_defect_certification": true,
+    "previous_level": "E2",
+    "recovery_evaluable": true,
+    "registered_level": "E4",
+    "unit_id": "twine/K06_TERM",
+    "unit_status": "RECOVERED_TWO_BLOCKS"
+  },
+  {
+    "E4_gates": {
+      "reading_chain": true,
+      "schedule_gate": true,
+      "scope_identity": true
+    },
+    "block_statuses": {
+      "1": "BLOCK_CONFIRMED",
+      "2": "BLOCK_CONFIRMED"
+    },
+    "not_functional_defect_certification": true,
+    "previous_level": "E2",
+    "recovery_evaluable": true,
+    "registered_level": "E4",
+    "unit_id": "rich-toolkit/K07_COLUMNS",
+    "unit_status": "RECOVERED_TWO_BLOCKS"
+  }
+]

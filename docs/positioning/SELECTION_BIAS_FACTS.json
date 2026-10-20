@@ -1,0 +1,45 @@
+{
+  "schema_version": "pyhost-context/selection-bias-facts/1.0",
+  "purpose": "Fix the 10/4/11 artifact-identity selection-bias accounting that REV1 wrongly collapsed into '14 unselected candidates'.",
+  "authority": {
+    "path": "pyhost-context/extension/reviews/reviewer001_artifact_identity_20261016/REVIEWER001_RULING.md",
+    "sha256": "b13e4b1a6aa96b88f62d1b8d42321c9d370c5a9826a4b1629aa7a2d8a62a4828",
+    "bytes": 6652,
+    "quoted_lines": "10 项有 A6 错误源码收集记录；以下四项停在依赖解析阶段；实际需重验的是 1 个入选项目 + 10 个曾进入错误源码准入的未入选项目，共 11 个。"
+  },
+  "potential_name_collisions": 15,
+  "wrong_source_unselected": {
+    "count": 10,
+    "names": [
+      "click-log",
+      "click-option-group",
+      "click-plugins",
+      "pytest-check",
+      "pytest-cov",
+      "pytest-json-ctrf",
+      "pytest-mock",
+      "pytest-random-order",
+      "pytest-runner",
+      "pytest-xdist"
+    ]
+  },
+  "resolver_only": {
+    "count": 4,
+    "names": [
+      "click-repl",
+      "pytest-asyncio",
+      "pytest-timeout",
+      "pytest-rerunfailures"
+    ],
+    "status": "stopped at dependency resolution; not wrong-source elimination and not part of the 11 re-verification items"
+  },
+  "selected_invalid": {
+    "count": 1,
+    "names": ["pytz-deprecation-shim"]
+  },
+  "bounded_readmission_total": 11,
+  "wrong_source_execution_is_not_the_same_as_name_collision": true,
+  "original_mechanical_selection_claim_recertified": false,
+  "withdrawn_statement": "14 个未入选候选的淘汰证据都取自另一个库。",
+  "note": "The superseded defect markdown remains byte-identical history; its '14' conclusion was corrected by the later signed identity ruling and must not be reused."
+}

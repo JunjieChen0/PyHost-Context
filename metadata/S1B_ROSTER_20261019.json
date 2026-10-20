@@ -1,0 +1,91 @@
+{
+  "amended_admitted": [
+    "structlog",
+    "rich-toolkit",
+    "twine"
+  ],
+  "b0_runs_per_project_total": 50,
+  "batch_id": "next-S1b-20261019",
+  "between_group_causal_attribution_allowed": false,
+  "expected_actual_N": 5,
+  "independent_b0": {
+    "formula": "5 x 45",
+    "runs": 225
+  },
+  "main_matrix": {
+    "formula": "5 x 9 x 5",
+    "runs": 225
+  },
+  "mechanism_group": [
+    "structlog",
+    "rich-toolkit",
+    "twine"
+  ],
+  "notes": [
+    "位置、分组与家族上限沿用冻结记录，不扩池、不补位。",
+    "机制组与参照组工具链不同；组间差异只作分层/描述性报告。"
+  ],
+  "original_rule_admitted": [
+    "twine"
+  ],
+  "profile_stratification_required": true,
+  "profiles": [
+    "D-R1",
+    "D-R0",
+    "S1a"
+  ],
+  "projects": [
+    {
+      "group": "mechanism",
+      "position": 2,
+      "profile": "D-R1",
+      "project": "structlog",
+      "pytest_version": "9.1.1",
+      "qualification": "D_admission_amended_20261019",
+      "version": "26.1.0"
+    },
+    {
+      "group": "mechanism",
+      "position": 4,
+      "profile": "D-R1",
+      "project": "rich-toolkit",
+      "pytest_version": "9.1.1",
+      "qualification": "D_admission_amended_20261019",
+      "version": "0.20.5"
+    },
+    {
+      "group": "mechanism",
+      "position": 7,
+      "profile": "D-R0",
+      "project": "twine",
+      "pytest_version": "7.2.0",
+      "qualification": "D_admission_amended_20261019",
+      "version": "7.0.0"
+    },
+    {
+      "group": "reference",
+      "position": 18,
+      "profile": "S1a",
+      "project": "typer",
+      "pytest_version": "7.2.0",
+      "qualification": "S1a_admitted_20261018",
+      "version": "0.27.2"
+    },
+    {
+      "group": "reference",
+      "position": 25,
+      "profile": "S1a",
+      "project": "pytest-xdist",
+      "pytest_version": "7.2.0",
+      "qualification": "S1a_admitted_20261018",
+      "version": "3.8.0"
+    }
+  ],
+  "qualification_profile": "signed_post_execution_metadata_amendment_20261019",
+  "reference_group": [
+    "typer",
+    "pytest-xdist"
+  ],
+  "schema_version": "pyhost-context/S1b-roster/1.0",
+  "total_runs": 450
+}
